@@ -30,7 +30,7 @@ const trainers = [
 
 export default function MainTrainers() {
   return (
-    <section className="py-20 bg-white">
+    <section id="trainers" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center text-secondary mb-4">
           専属トレーナー紹介

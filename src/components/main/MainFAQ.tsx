@@ -38,7 +38,7 @@ export default function MainFAQ() {
   };
 
   return (
-    <section className="py-20 bg-secondary text-white">
+    <section id="faq" className="py-20 bg-secondary text-white">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
           よくある質問

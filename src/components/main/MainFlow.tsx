@@ -30,7 +30,7 @@ const steps = [
 
 export default function MainFlow() {
   return (
-    <section className="py-20 bg-white">
+    <section id="flow" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center text-secondary mb-4">
           体験予約の流れ

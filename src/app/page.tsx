@@ -10,6 +10,7 @@ import MainTrainers from "@/components/main/MainTrainers";
 import MainLocations from "@/components/main/MainLocations";
 import MainTestimonials from "@/components/main/MainTestimonials";
 import MainFAQ from "@/components/main/MainFAQ";
+import MainBookingWidget from "@/components/main/MainBookingWidget";
 import MainCTA from "@/components/main/MainCTA";
 import MainFloatingCTA from "@/components/main/MainFloatingCTA";
 
@@ -28,6 +29,7 @@ export default function Home() {
         <MainLocations />
         <MainTestimonials />
         <MainFAQ />
+        <MainBookingWidget />
         <MainCTA />
       </main>
       <Footer />

@@ -2,62 +2,106 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-white py-12">
+    <footer className="bg-secondary text-white pt-20 pb-8">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
-          {/* 会社情報 */}
+        <div className="grid md:grid-cols-3 gap-10 mb-12">
+          {/* コンテンツリンク */}
           <div>
-            <div className="mb-4">
-              <span className="text-2xl font-bold text-primary">FIRE</span>
-              <span className="text-2xl font-bold">FITNESS</span>
-            </div>
-            <p className="text-gray-300 text-sm mb-4">
-              完全予約制パーソナルトレーニングジム
-            </p>
-            <p className="text-gray-300 text-sm">
-              30〜50代のビジネスパーソン、健康意識の高い方のための
-              <br />
-              オーダーメイドトレーニングを提供しています。
-            </p>
+            <h4 className="text-lg font-bold mb-5 relative pb-3">
+              コンテンツ
+              <span className="absolute bottom-0 left-0 w-10 h-1 bg-primary"></span>
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="#home" className="text-gray-300 hover:text-primary transition-colors">
+                  ホーム
+                </a>
+              </li>
+              <li>
+                <a href="#features" className="text-gray-300 hover:text-primary transition-colors">
+                  特徴
+                </a>
+              </li>
+              <li>
+                <a href="#flow" className="text-gray-300 hover:text-primary transition-colors">
+                  体験の流れ
+                </a>
+              </li>
+              <li>
+                <a href="#pricing" className="text-gray-300 hover:text-primary transition-colors">
+                  料金プラン
+                </a>
+              </li>
+              <li>
+                <a href="#trainers" className="text-gray-300 hover:text-primary transition-colors">
+                  トレーナー
+                </a>
+              </li>
+              <li>
+                <a href="#locations" className="text-gray-300 hover:text-primary transition-colors">
+                  店舗情報
+                </a>
+              </li>
+            </ul>
           </div>
 
-          {/* 店舗情報 */}
+          {/* サポートリンク */}
           <div>
-            <h3 className="text-lg font-bold mb-4">店舗情報</h3>
-            <div className="space-y-4">
-              <div>
-                <p className="font-medium text-primary">島田本町店</p>
-                <p className="text-gray-300 text-sm">
-                  〒700-0000 岡山市北区島田本町
-                </p>
-              </div>
-              <div>
-                <p className="font-medium text-primary">伊福町店</p>
-                <p className="text-gray-300 text-sm">
-                  〒700-0000 岡山市北区伊福町
-                </p>
-              </div>
-            </div>
+            <h4 className="text-lg font-bold mb-5 relative pb-3">
+              サポート
+              <span className="absolute bottom-0 left-0 w-10 h-1 bg-primary"></span>
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="#faq" className="text-gray-300 hover:text-primary transition-colors">
+                  よくある質問
+                </a>
+              </li>
+              <li>
+                <a href="#booking-widget" className="text-gray-300 hover:text-primary transition-colors">
+                  お問い合わせ
+                </a>
+              </li>
+              <li>
+                <Link href="https://www.firefitness-okayama.com/privacypolicy/" className="text-gray-300 hover:text-primary transition-colors">
+                  プライバシーポリシー
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.firefitness-okayama.com/termsofservice/" className="text-gray-300 hover:text-primary transition-colors">
+                  利用規約
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.firefitness-okayama.com/specified-commercial-transaction-law/" className="text-gray-300 hover:text-primary transition-colors">
+                  特定商取引法に基づく表記
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* お問い合わせ情報 */}
+          <div>
+            <h4 className="text-lg font-bold mb-5 relative pb-3">
+              お問い合わせ
+              <span className="absolute bottom-0 left-0 w-10 h-1 bg-primary"></span>
+            </h4>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>島田本町店: 〒700-0033</li>
+              <li>岡山県岡山市北区島田本町1-1-47</li>
+              <li>テクノ技研ビル2F</li>
+              <li className="pt-2">伊福町店: 〒700-0013</li>
+              <li>岡山県岡山市北区伊福町3-25-18</li>
+              <li className="pt-2">TEL: 070-8977-5851</li>
+              <li>Email: firefitness.okayama@gmail.com</li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <nav className="flex gap-6 text-sm text-gray-400">
-              <Link href="/desk-work" className="hover:text-primary transition-colors">
-                デスクワーカー向け
-              </Link>
-              <Link href="/postnatal" className="hover:text-primary transition-colors">
-                産後ダイエット
-              </Link>
-              <Link href="/over40" className="hover:text-primary transition-colors">
-                40代向け
-              </Link>
-            </nav>
-            <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} FIREFITNESS All Rights Reserved.
-            </p>
-          </div>
+        <div className="border-t border-white/10 pt-8 text-center">
+          <p className="text-gray-400 text-sm">
+            &copy; 2025 FIREFITNESS. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
