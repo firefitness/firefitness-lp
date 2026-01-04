@@ -8,6 +8,8 @@
     { "source": "/mamarestore/", "destination": "/mamarestore.html" },
     { "source": "/shimada-reserve", "destination": "/shimada-reserve.html" },
     { "source": "/shimada-reserve/", "destination": "/shimada-reserve.html" },
+    { "source": "/ifuku-reserve", "destination": "/ifuku-reserve.html" },
+    { "source": "/ifuku-reserve/", "destination": "/ifuku-reserve.html" },
     { "source": "/privacypolicy", "destination": "/privacypolicy.html" },
     { "source": "/privacypolicy/", "destination": "/privacypolicy.html" },
     { "source": "/termsofservice", "destination": "/termsofservice.html" },

@@ -93,6 +93,73 @@ https://www.firefitness-okayama.com/line-main?from=flyer&utm_source=flyer&utm_me
 
 ---
 
+### 6. 店舗別予約ページ（gym-reservation連携）
+
+#### 島田本町店
+
+**メインLPから**
+```
+https://www.firefitness-okayama.com/shimada-reserve?source=mainlp
+```
+
+**Googleマップから**
+```
+https://www.firefitness-okayama.com/shimada-reserve?source=googlemap
+```
+
+**LINEから**
+```
+https://www.firefitness-okayama.com/shimada-reserve?source=line
+```
+
+**チラシから**
+```
+https://www.firefitness-okayama.com/shimada-reserve?source=flyer&campaign=flyer_shimada_a
+```
+
+#### 伊福町店
+
+**メインLPから**
+```
+https://www.firefitness-okayama.com/ifuku-reserve?source=mainlp
+```
+
+**Googleマップから**
+```
+https://www.firefitness-okayama.com/ifuku-reserve?source=googlemap
+```
+
+**LINEから**
+```
+https://www.firefitness-okayama.com/ifuku-reserve?source=line
+```
+
+**チラシから**
+```
+https://www.firefitness-okayama.com/ifuku-reserve?source=flyer&campaign=flyer_ifuku_a
+```
+
+---
+
+### 7. 予約ウィジェット直接埋め込み（iframe用）
+
+**店舗選択可能（メインLP用）**
+```
+https://gym-reservation-firefitnessyuma-gmailcoms-projects.vercel.app/widget/trial?source=mainlp_widget
+```
+
+**島田本町店固定**
+```
+https://gym-reservation-firefitnessyuma-gmailcoms-projects.vercel.app/widget/trial?location=shimada&lockLocation=true&source=embed
+```
+
+**伊福町店固定**
+```
+https://gym-reservation-firefitnessyuma-gmailcoms-projects.vercel.app/widget/trial?location=ifuku&lockLocation=true&source=embed
+```
+
+---
+
 ## QRコード作成方法
 
 1. [QRコードジェネレーター](https://www.qrcode-monkey.com/)にアクセス
