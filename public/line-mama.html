@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE登録 | ママリストア - FIREFITNESS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe0eb 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #c44569;
+            margin-bottom: 10px;
+        }
+        
+        .logo-sub {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 40px rgba(196,69,105,0.15);
+        }
+        
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .benefits {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .benefit-item:last-child {
+            border-bottom: none;
+        }
+        
+        .benefit-icon {
+            color: #c44569;
+            font-weight: 700;
+        }
+        
+        .line-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #06C755;
+            color: #fff;
+            width: 100%;
+            padding: 18px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(6,199,85,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .line-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(6,199,85,0.4);
+        }
+        
+        .line-icon {
+            width: 28px;
+            height: 28px;
+        }
+        
+        .note {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .loading {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .loading.show {
+            display: block;
+        }
+        
+        .spinner {
+            width: 30px;
+            height: 30px;
+            border: 3px solid #f0f0f0;
+            border-top-color: #c44569;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">MAMA RESTORE</div>
+        <div class="logo-sub">by FIREFITNESS</div>
+        
+        <div class="card">
+            <div class="icon">👶</div>
+            <h1 class="title">産後ダイエット<br>LINE相談</h1>
+            <p class="description">産後の体型戻し、骨盤ケアについて<br>お気軽にご相談ください</p>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span>
+                    <span>産後ダイエットの無料相談</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span>
+                    <span>お子様連れOKの体験予約</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span>
+                    <span>限定キャンペーン情報</span>
+                </div>
+            </div>
+            
+            <a href="#" id="line-link" class="line-button" onclick="trackAndRedirect(event)">
+                <svg class="line-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                </svg>
+                LINEで相談する
+            </a>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p class="loading-text">LINEに移動中...</p>
+            </div>
+            
+            <p class="note">※ 24時間いつでもご登録いただけます</p>
+        </div>
+    </div>
+    
+    <script>
+        // 設定
+        const LINE_URL = 'https://lin.ee/S61b75f';
+        const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwF8gRlWmg_judIEMdkxE4gKHsHY33Am8uVTApqMw09dYXlw5sK227S7A0I9LvqhKqh/exec';
+        
+        function getUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                from: params.get('from') || 'postnatal',
+                campaign: params.get('campaign') || '',
+                ref: params.get('ref') || ''
+            };
+        }
+        
+        function trackAndRedirect(event) {
+            event.preventDefault();
+            
+            const params = getUrlParams();
+            const loading = document.getElementById('loading');
+            const button = document.getElementById('line-link');
+            
+            // ローディング表示
+            button.style.display = 'none';
+            loading.classList.add('show');
+            
+            // トラッキングデータ
+            const trackingData = {
+                timestamp: new Date().toISOString(),
+                page: 'line-mama',
+                source: params.from,
+                campaign: params.campaign,
+                referrer: params.ref || document.referrer,
+                userAgent: navigator.userAgent
+            };
+            
+            // GASにデータ送信（Image使用でCORS回避）
+            const img = new Image();
+            const queryString = Object.keys(trackingData)
+                .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(trackingData[key])}`)
+                .join('&');
+            
+            img.onload = function() {
+                window.location.href = LINE_URL;
+            };
+            
+            img.onerror = function() {
+                // エラーでもLINEへリダイレクト
+                window.location.href = LINE_URL;
+            };
+            
+            img.src = `${GAS_WEB_APP_URL}?${queryString}`;
+            
+            // タイムアウト（3秒後に強制リダイレクト）
+            setTimeout(function() {
+                window.location.href = LINE_URL;
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

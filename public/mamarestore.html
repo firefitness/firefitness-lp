@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>産後ダイエット専門 | ママリストア - FIREFITNESS</title>
+    <meta name="description" content="岡山市の産後ダイエット専門プログラム。産後の体型戻し、骨盤ケア、体力回復をサポート。お子様連れOK、完全個室のパーソナルトレーニング。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #fff;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+            padding: 15px 20px;
+            text-align: center;
+        }
+        
+        .header-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .header-subtitle {
+            font-size: 12px;
+            color: rgba(255,255,255,0.9);
+            margin-top: 5px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe0eb 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: #c44569;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
+        .hero-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #c44569;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .hero-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .hero-image {
+            max-width: 300px;
+            margin: 0 auto 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(196,69,105,0.2);
+        }
+        
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .hero-feature {
+            background: #fff;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Problems Section */
+        .problems {
+            padding: 60px 20px;
+            background: #fff;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .section-title span {
+            color: #c44569;
+        }
+        
+        .problem-list {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .problem-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #fff5f8;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .problem-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        
+        .problem-text {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Program Section */
+        .program {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe0eb 100%);
+        }
+        
+        .program-intro {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        .program-intro p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .stage-cards {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .stage-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .stage-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .stage-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #c44569;
+            margin-bottom: 10px;
+        }
+        
+        .stage-period {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+        
+        .stage-description {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        /* Trainer Section */
+        .trainer {
+            padding: 60px 20px;
+            background: #fff;
+        }
+        
+        .trainer-card {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .trainer-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #ffe0eb;
+        }
+        
+        .trainer-name {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .trainer-title {
+            font-size: 14px;
+            color: #c44569;
+            margin-bottom: 20px;
+        }
+        
+        .trainer-bio {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #555;
+            text-align: left;
+        }
+        
+        .trainer-qualifications {
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .trainer-qualifications h4 {
+            font-size: 14px;
+            color: #c44569;
+            margin-bottom: 10px;
+        }
+        
+        .trainer-qualifications ul {
+            list-style: none;
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .trainer-qualifications li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .trainer-qualifications li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #c44569;
+        }
+        
+        /* Results Section */
+        .results {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe0eb 100%);
+        }
+        
+        .result-cards {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .result-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .result-profile {
+            font-size: 14px;
+            color: #888;
+        }
+        
+        .result-change {
+            font-size: 18px;
+            font-weight: 700;
+            color: #c44569;
+        }
+        
+        .result-images {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .result-images img {
+            flex: 1;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        
+        .result-comment {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 60px 20px;
+            background: #fff;
+        }
+        
+        .price-cards {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .price-card {
+            border: 2px solid #ffe0eb;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .price-card.recommended {
+            border-color: #c44569;
+            position: relative;
+        }
+        
+        .price-card.recommended::before {
+            content: "人気No.1";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #c44569;
+            color: #fff;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        .price-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .price-sessions {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        
+        .price-amount {
+            font-size: 36px;
+            font-weight: 700;
+            color: #c44569;
+        }
+        
+        .price-amount span {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        
+        .price-per-session {
+            font-size: 14px;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .price-features {
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .price-features li {
+            padding: 8px 0;
+            font-size: 14px;
+            color: #555;
+            list-style: none;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .price-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #c44569;
+            font-weight: 700;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe0eb 100%);
+        }
+        
+        .faq-list {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .faq-question::before {
+            content: "Q";
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: #c44569;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+        
+        .faq-answer {
+            padding: 0 20px 20px 54px;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #c44569 0%, #ff6b9d 100%);
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        
+        .cta-subtitle {
+            font-size: 16px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: #c44569;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+        
+        .cta-note {
+            margin-top: 15px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        /* LINE Button */
+        .line-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #06C755;
+            color: #fff;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            box-shadow: 0 5px 20px rgba(6,199,85,0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .line-button:hover {
+            transform: translateY(-3px);
+        }
+        
+        .line-icon {
+            width: 28px;
+            height: 28px;
+        }
+        
+        /* Reservation Section */
+        .reservation {
+            padding: 60px 20px;
+            background: #fff;
+        }
+        
+        .reservation-widget {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        #hacomono-widget-w0010 {
+            width: 100%;
+            min-height: 600px;
+            border: none;
+            border-radius: 10px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #333;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            font-size: 13px;
+            margin: 0 10px;
+        }
+        
+        .footer-links a:hover {
+            color: #fff;
+        }
+        
+        .footer-copyright {
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+        }
+        
+        /* Fixed CTA */
+        .fixed-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            padding: 15px 20px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .fixed-cta .cta-button {
+            flex: 1;
+            max-width: 200px;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 14px;
+            background: linear-gradient(135deg, #c44569 0%, #ff6b9d 100%);
+            color: #fff;
+        }
+        
+        .fixed-cta .line-button {
+            flex: 1;
+            max-width: 200px;
+            justify-content: center;
+            padding: 15px 20px;
+            font-size: 14px;
+        }
+        
+        /* Spacer for fixed CTA */
+        .cta-spacer {
+            height: 80px;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-title {
+                font-size: 42px;
+            }
+            
+            .hero-features {
+                gap: 20px;
+            }
+            
+            .section-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">MAMA RESTORE</div>
+        <div class="header-subtitle">by FIREFITNESS</div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">産後ダイエット専門</span>
+        <h1 class="hero-title">産後の体、<br>諦めていませんか？</h1>
+        <p class="hero-subtitle">3ヶ月で理想の体型を取り戻す<br>産後専門パーソナルトレーニング</p>
+        <div class="hero-image">
+            <img src="/images/wp/mama-hero.jpg" alt="産後ダイエット成功例">
+        </div>
+        <div class="hero-features">
+            <div class="hero-feature">👶 お子様連れOK</div>
+            <div class="hero-feature">🔒 完全個室</div>
+            <div class="hero-feature">🏠 産後1ヶ月〜</div>
+        </div>
+    </section>
+    
+    <!-- Problems Section -->
+    <section class="problems">
+        <h2 class="section-title">こんな<span>お悩み</span>ありませんか？</h2>
+        <div class="problem-list">
+            <div class="problem-item">
+                <span class="problem-icon">😔</span>
+                <p class="problem-text">産前の服が入らなくなった...</p>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">😰</span>
+                <p class="problem-text">骨盤の歪みが気になる</p>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">😩</span>
+                <p class="problem-text">育児で運動する時間がない</p>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">😢</span>
+                <p class="problem-text">子どもを預けられる場所がない</p>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">😞</span>
+                <p class="problem-text">自己流ダイエットでリバウンド...</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Program Section -->
+    <section class="program">
+        <h2 class="section-title"><span>3ステージ</span>プログラム</h2>
+        <div class="program-intro">
+            <p>産後の体は、普通のダイエットとは違うアプローチが必要です。ママリストアでは、産後の体の状態に合わせた3つのステージで、安全かつ効果的に体型を戻していきます。</p>
+        </div>
+        <div class="stage-cards">
+            <div class="stage-card">
+                <span class="stage-number">STAGE 1</span>
+                <h3 class="stage-title">Recovery（回復期）</h3>
+                <p class="stage-period">産後1〜3ヶ月</p>
+                <p class="stage-description">まずは産後の体をケア。骨盤底筋群の回復、腹直筋離開の改善、基礎的な姿勢矯正を行います。無理なく体を整えることからスタート。</p>
+            </div>
+            <div class="stage-card">
+                <span class="stage-number">STAGE 2</span>
+                <h3 class="stage-title">Reshape（整形期）</h3>
+                <p class="stage-period">産後3〜6ヶ月</p>
+                <p class="stage-description">体が整ってきたら、本格的なボディメイクへ。骨盤周りの筋力強化、基礎代謝の向上、気になる部位の引き締めを行います。</p>
+            </div>
+            <div class="stage-card">
+                <span class="stage-number">STAGE 3</span>
+                <h3 class="stage-title">Rebuild（再構築期）</h3>
+                <p class="stage-period">産後6ヶ月〜</p>
+                <p class="stage-description">理想の体型を目指して仕上げのトレーニング。筋力アップ、ボディラインの美しさ、日常生活での体力向上を実現します。</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trainer Section -->
+    <section class="trainer">
+        <h2 class="section-title">担当<span>トレーナー</span></h2>
+        <div class="trainer-card">
+            <img src="/images/wp/trainer-maika.jpg" alt="山本 舞香" class="trainer-image">
+            <h3 class="trainer-name">山本 舞香</h3>
+            <p class="trainer-title">産後ダイエット専門トレーナー</p>
+            <p class="trainer-bio">自身も2児の母として産後の体の変化を経験。その経験を活かし、ママの気持ちに寄り添ったトレーニングを提供しています。「無理なく、楽しく、確実に」をモットーに、多くのママの体型回復をサポートしてきました。</p>
+            <div class="trainer-qualifications">
+                <h4>保有資格</h4>
+                <ul>
+                    <li>NSCA認定パーソナルトレーナー</li>
+                    <li>産後ケアインストラクター</li>
+                    <li>骨盤矯正スペシャリスト</li>
+                    <li>栄養コンシェルジュ2級</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Results Section -->
+    <section class="results">
+        <h2 class="section-title">お客様の<span>変化</span></h2>
+        <div class="result-cards">
+            <div class="result-card">
+                <div class="result-header">
+                    <span class="result-profile">30代 / 産後8ヶ月</span>
+                    <span class="result-change">-8.5kg</span>
+                </div>
+                <p class="result-comment">「子連れOKなので、預け先を探す必要がなく本当に助かりました。3ヶ月で産前の体重に戻れて、自信を取り戻せました！」</p>
+            </div>
+            <div class="result-card">
+                <div class="result-header">
+                    <span class="result-profile">20代 / 産後5ヶ月</span>
+                    <span class="result-change">-6.2kg</span>
+                </div>
+                <p class="result-comment">「骨盤の歪みがずっと気になっていましたが、トレーニングを続けるうちに腰痛もなくなり、体のラインがきれいになりました。」</p>
+            </div>
+            <div class="result-card">
+                <div class="result-header">
+                    <span class="result-profile">30代 / 産後1年</span>
+                    <span class="result-change">-10.3kg</span>
+                </div>
+                <p class="result-comment">「産後太りが1年経っても戻らず諦めかけていましたが、正しい方法を教えてもらい、今では産前より引き締まった体になれました！」</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <h2 class="section-title"><span>料金</span>プラン</h2>
+        <div class="price-cards">
+            <div class="price-card">
+                <h3 class="price-name">お試し体験</h3>
+                <p class="price-sessions">1回 / 60分</p>
+                <p class="price-amount">¥3,300<span>（税込）</span></p>
+                <ul class="price-features">
+                    <li>カウンセリング</li>
+                    <li>体験トレーニング</li>
+                    <li>プログラム提案</li>
+                </ul>
+            </div>
+            <div class="price-card recommended">
+                <h3 class="price-name">3ヶ月集中コース</h3>
+                <p class="price-sessions">24回 / 週2回ペース</p>
+                <p class="price-amount">¥198,000<span>（税込）</span></p>
+                <p class="price-per-session">1回あたり ¥8,250</p>
+                <ul class="price-features">
+                    <li>パーソナルトレーニング24回</li>
+                    <li>食事指導サポート</li>
+                    <li>LINEサポート</li>
+                    <li>骨盤ケア付き</li>
+                </ul>
+            </div>
+            <div class="price-card">
+                <h3 class="price-name">月額プラン</h3>
+                <p class="price-sessions">月8回</p>
+                <p class="price-amount">¥70,400<span>（税込）</span></p>
+                <p class="price-per-session">1回あたり ¥8,800</p>
+                <ul class="price-features">
+                    <li>パーソナルトレーニング8回</li>
+                    <li>食事アドバイス</li>
+                    <li>LINEサポート</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2 class="section-title">よくある<span>ご質問</span></h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">産後いつから始められますか？</div>
+                <p class="faq-answer">産後1ヶ月健診で問題がなければ、産後1ヶ月から始められます。帝王切開の方は産後2ヶ月からがおすすめです。まずはカウンセリングでお体の状態を確認させていただきます。</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">子どもを連れて行っても大丈夫ですか？</div>
+                <p class="faq-answer">はい、お子様連れ大歓迎です！完全個室なので、授乳やおむつ替えも安心してできます。ベビーカーでそのまま入室いただけます。</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">運動経験がないのですが大丈夫ですか？</div>
+                <p class="faq-answer">もちろん大丈夫です！お一人おひとりの体力や経験に合わせてプログラムを作成します。無理なく始められるので、運動が苦手な方も安心してください。</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">授乳中でも大丈夫ですか？</div>
+                <p class="faq-answer">はい、授乳中でも安全なトレーニングを行います。授乳に影響が出ないよう、トレーニング内容や食事指導も配慮しています。</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">どのくらいで効果が出ますか？</div>
+                <p class="faq-answer">個人差はありますが、多くの方が1ヶ月で体の変化を実感されています。3ヶ月継続していただくと、見た目にも明らかな変化が現れます。</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2 class="cta-title">まずは体験から<br>始めてみませんか？</h2>
+        <p class="cta-subtitle">お子様連れでも安心の完全個室<br>あなたに合ったプランをご提案します</p>
+        <a href="/line-mama" class="line-button">
+            <svg class="line-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+            </svg>
+            LINEで相談する
+        </a>
+        <p class="cta-note">24時間受付中・お気軽にどうぞ</p>
+    </section>
+    
+    <!-- Reservation Section -->
+    <section class="reservation" id="reserve">
+        <h2 class="section-title"><span>体験</span>予約</h2>
+        <div class="reservation-widget">
+            <iframe 
+                id="hacomono-widget-w0010" 
+                src="https://teststelone.hacomono.jp/reserve/gym-reservation"
+                title="予約ウィジェット">
+            </iframe>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">MAMA RESTORE by FIREFITNESS</div>
+        <div class="footer-links">
+            <a href="/privacypolicy">プライバシーポリシー</a>
+            <a href="/termsofservice">利用規約</a>
+            <a href="/specified-commercial-transaction-law">特定商取引法</a>
+        </div>
+        <p class="footer-copyright">© 2024 FIREFITNESS. All Rights Reserved.</p>
+    </footer>
+    
+    <!-- Fixed CTA -->
+    <div class="fixed-cta">
+        <a href="#reserve" class="cta-button">体験予約</a>
+        <a href="/line-mama" class="line-button">
+            <svg class="line-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+            </svg>
+            LINE相談
+        </a>
+    </div>
+    
+    <!-- CTA Spacer -->
+    <div class="cta-spacer"></div>
+    
+    <script src="https://teststelone.hacomono.jp/js/widget.js"></script>
+</body>
+</html>

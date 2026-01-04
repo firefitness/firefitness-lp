@@ -2,6 +2,10 @@
   "rewrites": [
     { "source": "/line-main", "destination": "/line-main.html" },
     { "source": "/line-main/", "destination": "/line-main.html" },
+    { "source": "/line-mama", "destination": "/line-mama.html" },
+    { "source": "/line-mama/", "destination": "/line-mama.html" },
+    { "source": "/mamarestore", "destination": "/mamarestore.html" },
+    { "source": "/mamarestore/", "destination": "/mamarestore.html" },
     { "source": "/shimada-reserve", "destination": "/shimada-reserve.html" },
     { "source": "/shimada-reserve/", "destination": "/shimada-reserve.html" },
     { "source": "/privacypolicy", "destination": "/privacypolicy.html" },
