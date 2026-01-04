@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" !important;>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" !important;>
+    <title>プライバシーポリシー - FIREFITNESS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" !important;>
+    <style>
+        /* 全体のスタイル */
+        :root {
+            --primary-color: #0d2b45 !important;
+            --accent-color: #ff6b35 !important;
+            --light-color: #f9f9f9 !important;
+            --dark-color: #333 !important;
+            --gray-color: #e0e0e0 !important;
+            --border-color: #eaeaea !important;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+            --hover-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+            --transition: all 0.3s ease !important;
+        }
+        
+        * {
+            box-sizing: border-box !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif !important;
+            color: var(--dark-color) !important;
+            line-height: 1.7 !important;
+            background-color: var(--light-color) !important;
+        }
+        
+        .container {
+            max-width: 1100px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+        }
+        
+        /* ヘッダー部分 */
+        header {
+            background-color: #fff !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 100 !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+        }
+        
+        .header-container {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            padding: 15px 0 !important;
+        }
+        
+        .logo {
+            display: flex !important;
+            align-items: center !important;
+            text-decoration: none !important;
+            color: var(--primary-color) !important;
+            font-weight: 700 !important;
+            font-size: 22px !important;
+            transition: var(--transition) !important;
+        }
+        
+        .logo:hover {
+            color: var(--accent-color) !important;
+        }
+        
+        .logo img {
+            height: 35px !important;
+            margin-right: 10px !important;
+        }
+        
+        .breadcrumb {
+            display: flex !important;
+            align-items: center !important;
+            font-size: 14px !important;
+            color: #777 !important;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color) !important;
+            text-decoration: none !important;
+            transition: var(--transition) !important;
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--accent-color) !important;
+        }
+        
+        .breadcrumb .separator {
+            margin: 0 8px !important;
+            color: #aaa !important;
+        }
+        
+        /* メインコンテンツ */
+        main {
+            background-color: #fff !important;
+            padding: 60px 0 !important;
+            box-shadow: var(--box-shadow) !important;
+            margin: 30px 0 !important;
+            border-radius: 12px !important;
+        }
+        
+        .page-title {
+            text-align: center !important;
+            margin-bottom: 50px !important;
+            position: relative !important;
+            color: var(--primary-color) !important;
+        }
+        
+        .page-title h1 {
+            font-size: 32px !important;
+            font-weight: 600 !important;
+            margin-bottom: 15px !important;
+            display: inline-block !important;
+        }
+        
+        .page-title h1:after {
+            content: '' !important;
+            position: absolute !important;
+            bottom: -10px !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            width: 80px !important;
+            height: 3px !important;
+            background-color: var(--accent-color) !important;
+            border-radius: 2px !important;
+        }
+        
+        .privacy-section {
+            max-width: 800px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+        }
+        
+        .privacy-section h4 {
+            color: var(--primary-color) !important;
+            font-size: 20px !important;
+            margin: 30px 0 15px !important;
+            position: relative !important;
+            font-weight: 600 !important;
+            padding-bottom: 8px !important;
+            border-bottom: 2px solid var(--accent-color) !important;
+        }
+        
+        .privacy-section h6 {
+            font-size: 16px !important;
+            margin-bottom: 20px !important;
+            line-height: 1.6 !important;
+            font-weight: normal !important;
+        }
+        
+        .privacy-section p {
+            margin-bottom: 15px !important;
+            line-height: 1.8 !important;
+        }
+        
+        .privacy-section .ml20 {
+            margin-left: 20px !important;
+            margin-bottom: 20px !important;
+        }
+        
+        .privacy-section .mt30 {
+            margin-top: 30px !important;
+        }
+        
+        a {
+            color: var(--accent-color) !important;
+            text-decoration: none !important;
+            transition: var(--transition) !important;
+            border-bottom: 1px solid transparent !important;
+        }
+        
+        a:hover {
+            border-bottom-color: var(--accent-color) !important;
+        }
+        
+        /* コンタクトフォーム */
+        .contact-section {
+            margin-top: 70px !important;
+            padding-top: 60px !important;
+            border-top: 1px solid var(--border-color) !important;
+        }
+        
+        .contact-section h2 {
+            font-size: 28px !important;
+            margin-bottom: 5px !important;
+            color: var(--primary-color) !important;
+            font-weight: 600 !important;
+            text-align: center !important;
+            margin-bottom: 15px !important;
+        }
+        
+        .contact-section .subtitle {
+            text-align: center !important;
+            color: #777 !important;
+            margin-bottom: 40px !important;
+            font-size: 16px !important;
+        }
+        
+        .form-container {
+            max-width: 700px !important;
+            margin: 0 auto !important;
+            background-color: #fff !important;
+            border-radius: 10px !important;
+            box-shadow: var(--box-shadow) !important;
+            padding: 40px !important;
+        }
+        
+        .form-row {
+            margin-bottom: 25px !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+        }
+        
+        .form-label {
+            flex: 0 0 200px !important;
+            font-weight: 600 !important;
+            padding: 12px 0 !important;
+            color: var(--primary-color) !important;
+        }
+        
+        .form-field {
+            flex: 1 !important;
+            min-width: 300px !important;
+        }
+        
+        .form-flex {
+            display: flex !important;
+            gap: 15px !important;
+        }
+        
+        .form-flex input {
+            flex: 1 !important;
+        }
+        
+        .asterisk {
+            background-color: var(--accent-color) !important;
+            color: white !important;
+            font-size: 12px !important;
+            padding: 2px 8px !important;
+            border-radius: 4px !important;
+            margin-left: 8px !important;
+            font-weight: 500 !important;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100% !important;
+            padding: 12px 15px !important;
+            border: 1px solid var(--border-color) !important;
+            border-radius: 6px !important;
+            font-family: inherit !important;
+            font-size: 15px !important;
+            transition: var(--transition) !important;
+            background-color: #f9f9f9 !important;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none !important;
+            border-color: var(--accent-color) !important;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1) !important;
+            background-color: #fff !important;
+        }
+        
+        .radio-group {
+            display: flex !important;
+            gap: 30px !important;
+            padding: 12px 0 !important;
+        }
+        
+        .radio-item {
+            display: flex !important;
+            align-items: center !important;
+            cursor: pointer !important;
+        }
+        
+        .radio-item input[type="radio"] {
+            width: 18px !important;
+            height: 18px !important;
+            margin-right: 8px !important;
+            cursor: pointer !important;
+        }
+        
+        textarea {
+            min-height: 150px !important;
+            resize: vertical !important;
+        }
+        
+        .submit-btn {
+            text-align: center !important;
+            margin-top: 40px !important;
+        }
+        
+        .submit-btn input {
+            background-color: var(--accent-color) !important;
+            color: white !important;
+            border: none !important;
+            padding: 14px 45px !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            cursor: pointer !important;
+            transition: var(--transition) !important;
+            border-radius: 50px !important;
+            box-shadow: 0 4px 10px rgba(255, 107, 53, 0.2) !important;
+        }
+        
+        .submit-btn input:hover {
+            background-color: #e85d2a !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 15px rgba(255, 107, 53, 0.3) !important;
+        }
+        
+        /* フッター */
+        footer {
+            background-color: var(--primary-color) !important;
+            color: white !important;
+            padding: 80px 0 30px !important;
+        }
+        
+        .footer-grid {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 40px !important;
+            margin-bottom: 50px !important;
+        }
+        
+        .footer-links h4 {
+            font-size: 18px !important;
+            margin-bottom: 20px !important;
+            position: relative !important;
+            padding-bottom: 10px !important;
+        }
+        
+        .footer-links h4:after {
+            content: "" !important;
+            position: absolute !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            width: 40px !important;
+            height: 3px !important;
+            background-color: var(--accent-color) !important;
+        }
+        
+        .footer-links ul {
+            list-style: none !important;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 10px !important;
+        }
+        
+        .footer-links ul li a {
+            color: #ddd !important;
+            text-decoration: none !important;
+            transition: var(--transition) !important;
+            border-bottom: none !important;
+            font-size: 14px !important;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--accent-color) !important;
+        }
+        
+        .social-links {
+            display: flex !important;
+            gap: 15px !important;
+            margin-top: 20px !important;
+        }
+        
+        .social-links a {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 40px !important;
+            height: 40px !important;
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            color: white !important;
+            border-radius: 50% !important;
+            transition: var(--transition) !important;
+            border-bottom: none !important;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent-color) !important;
+            transform: translateY(-3px) !important;
+        }
+        
+        .copyright {
+            text-align: center !important;
+            padding-top: 30px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+            font-size: 14px !important;
+            color: #aaa !important;
+        }
+        
+        /* 戻るボタン */
+        .back-to-top {
+            position: fixed !important;
+            bottom: 30px !important;
+            right: 30px !important;
+            width: 50px !important;
+            height: 50px !important;
+            background-color: var(--accent-color) !important;
+            color: white !important;
+            border-radius: 50% !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            cursor: pointer !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            transition: var(--transition) !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+            z-index: 99 !important;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        .back-to-top:hover {
+            background-color: #e85d2a !important;
+            transform: translateY(-3px) !important;
+        }
+        
+        /* レスポンシブ対応 */
+        @media (max-width: 900px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            .form-container {
+                padding: 30px 20px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-title h1 {
+                font-size: 28px !important;
+            }
+            
+            .form-label {
+                flex: 0 0 100% !important;
+                padding-bottom: 5px !important;
+            }
+            
+            .form-field {
+                flex: 0 0 100% !important;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-container {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+            }
+            
+            .breadcrumb {
+                margin-top: 10px !important;
+            }
+            
+            .form-flex {
+                flex-direction: column !important;
+                gap: 10px !important;
+            }
+            
+            .submit-btn input {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W495S7Q4');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W495S7Q4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ1J7S3WLT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PZ1J7S3WLT');
+    </script>
+    
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <a href="https://www.firefitness-okayama.com" class="logo">
+                    <img src="https://www.firefitness-okayama.com/wp-content/uploads/2024/06/黒マーク.png" alt="FIREFITNESS">
+                    FIREFITNESS
+                </a>
+                <div class="breadcrumb">
+                    <a href="https://www.firefitness-okayama.com">トップページ</a>
+                    <span class="separator">/</span>
+                    <span>プライバシーポリシー</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <main>
+            <div class="page-title">
+                <h1>プライバシーポリシー</h1>
+            </div>
+            
+            <section id="privacy" class="privacy-section">
+                <h6>FIREFITNESSでは、下記の「プライバシーポリシー」に基づき、お客様の個人情報を取り扱います。</h6>
+                
+                <h6>お客様が、「FIREFITNESS」（以下「本サービス」といいます）のご利用をされるためには、下記の「プライバシーポリシー」を熟読のうえ、内容に同意していただく必要があります。</h6>
+                <h6>同意いただけない場合は、本サービスへのアクセス及び本サービスのご利用はお断り致します。</h6>
+                
+                <h4>用語の定義及び取り扱う個人情報</h4>
+                <p>「個人情報」とは、個人情報の保護に関する法律（以下「個人情報保護法」といいます。）第2条にて定義される「個人情報」を指すものとし、お客様個人に関する以下の情報を含むものとします。</p>
+                <p class="ml20">・氏名、生年月日、性別、ご職業、その他の特定の個人を識別することができる情報、並びに特定の個人情報に結びついて使用されるご住所、電話番号、アカウント情報（メールアドレス及びパスワード等をいいます）、 クレジットカード、ニックネーム等の情報、本サービスの利用状況に関する情報、お客様の各店舗への入館履歴、各店舗の施設内におけるセキュリティカメラの映像及び身長・体重等身体的特徴、趣味、家族構成、年齢その他の個人に関する属性情報<br /><br />「個人関連情報」とは、個人情報保護法第2条にて定義される「個人関連情報」を指すものとし、特定のお客様を識別することのできないクッキー情報などがこれに含まれます。</p>
+                
+                <h4>個人情報の収集について</h4>
+                <p>弊社は、本サービスをご利用になるお客様の個人情報を以下の方法により、収集させていただく場合がございます。</p>
+                <p class="ml20">・本サービス上で個人情報をお客様自身に入力していただく方法。<br />・弊社に対し、お客様から電子メール、インスタントメッセンジャー、郵便、書面、口頭等で個人情報をご提供いただく方法<br />・お客様が本サービスをご利用された際に履歴等を収集させていただく方法。この方法により収集させていただく情報には、お客様が利用されるＵＲＬ、ブラウザや携帯電話の種類やIPアドレス、お客様の位置情報等の情報が含まれます。</p>
+                
+                <h4>個人情報の管理について</h4>
+                <p>弊社にて個人情報を管理・利用する業務に従事する者は、お客様の個人情報について厳重に管理を行い、個人情報への不当なアクセス、紛失、漏洩、改ざん等が起きないよう、個人情報の取扱に十分な注意を払い、その業務に努めます。</p>
+                
+                <h4>個人情報の利用目的について</h4>
+                <p>個人情報を取得・収集する際にお客様にお知らせした利用目的、利用規約に定める利用目的又は以下の目的のために、個人情報を利用させていただきます。</p>
+                <p class="ml20">・本サービスに関する各種事項の連絡や情報提供を行うため<br />・本サービスを提供するため<br />・本サービスにユーザー登録する際に必要な情報入力を簡略化するため<br />・電子メール配信サービスのお申し込みの確認やメールを配信するため<br />・本サービスに関するご購入の確認やお届けをするため<br />・本サービスに関するご請求、お支払いとその確認をするため<br />・本サービス及び弊社の提供するその他のサービスに関するアンケート等の調査への協力を依頼するため、及びご協力いただいた調査等に対する謝礼等をお送りするため<br />・ご応募いただいた懸賞等に対する景品等をお送りするため<br />・本サービスの利用状況等を調査・分析するため<br />・本サービスの内容をよりご満足いただけるよう改良・改善、又は新サービス開発のため<br />・本サービスの内容をお客様に合わせてカスタマイズするため<br />・本サービスに関する満足度を調査するため<br />・個人情報を特定の個人を識別することができない方法で統計的に処理した情報を、集約し調査結果として公表するため<br />・本サービス、新サービスその他の各種サービス（弊社以外の第三者の提供するサービスを含みます）のご案内やお知らせをお届けするため<br />・調査のご協力依頼や各種イベントへのご参加のお願い、その結果等をご報告するため<br />・本サービス運営上のトラブルの解決のため</p>
+                
+                <h4>クッキー情報等の個人関連情報の使用について</h4>
+                <p>・クッキー情報等の個人関連情報は、単独では特定の個人を識別することができるものではありません。個人情報と一体となって使用される場合には、クッキー情報等も個人情報とみなします。<br />・クッキーの使用を許可するかどうかはお客様が設定できます。多くのWebブラウザでは、自動的にクッキーの使用が許可されますが、クッキーの使用を禁止するようにブラウザの設定を変更することも可能です。クッキーの使用を禁止した場合、本サービスを正常にご利用できない、あるいはクッキーを必要とする広告設定を反映できなくなる可能性があります。<br />・弊社は、お客様のクッキー情報や、閲覧された広告・ページ、お客様のご利用環境等の情報を自動的にお客様のブラウザから受け取り、サーバーに記録し、本サービスログイン時の電子メールアドレス自動入力等の利便性向上のため、セッションの維持及び保護等セキュリティの為、また、新しいサービスを検討するため、サービスや広告の内容をよりお客様に適したものとするために利用いたします。<br />・弊社は、外部の事業者から個人関連情報（お客様が弊社のウェブサイトに訪問する前にアクセスした広告に関する情報（当該広告へのアクセス日時や当該広告の掲載されたウェブサイト、その他広告掲載に関する成果報酬の算定に必要となる情報など）を含みます。）の提供を受け、当該個人関連情報を、弊社の保有するお客様の個人情報と一体として使用することがあり、お客様はこのような個人関連情報の利用方法に予め承諾するものとします。</p>
+                
+                <h4>「ログ」の使用等について</h4>
+                <p>弊社は、利用者が本サービス訪問時に自動で生成される、IPアドレス、ブラウザ種類、ブラウザ言語等を収集します。<br />これらの情報はユーザー環境を分析し、より良いサービス提供のため、また正常なサービス提供を妨害する不正行為防止のために利用いたします。検索に関する記録は個人を特定することができない形態で保存及び管理され、統計データ作成等の用途で利用いたします。</p>
+                
+                <h4>「機器情報」の使用等について</h4>
+                <p>弊社は、端末の個体識別情報等の機器情報を収集する場合がございます。<br />これらの情報はより良いサービス提供のため、また正常なサービス提供を妨害する不正行為防止のために利用いたします。</p>
+                
+                <h4>弊社による個人情報の訂正</h4>
+                <p>個人情報のうち、メールアドレス、電話番号、金融機関の名称あるいはクレジットカードの有効期限等、本サービスの提供やご請求を行う上で支障がある情報に変更があった場合には、弊社が登録されている個人情報を変更させていただく場合があります。</p>
+                
+                <h4>個人情報の安全管理措置及びセキュリティについて</h4>
+                <p>弊社では、収集させていただいた個人情報を、一般の利用者がアクセスできない環境下にあるサーバーにて安全に保管し、不正アクセス・紛失・破壊・改ざん又は漏洩が生じないよう努めます。</p>
+                
+                <h4>免責・注意事項</h4>
+                <p>・弊社は、本サービスにリンクされている他の事業者又は個人のウェブサービスにおけるお客様の個人情報等の保護に関しまして、一切の責任を請け負いません。<br />お客様ご自身にて当該サービスの内容をよくご確認の上で、閲覧及びご利用をお願いいたします。<br />・ハッカー等による不当な行為により、お客様及び第三者に損害が生じた場合に関してまして、弊社は一切の責任を請け負いません。<br />・お客様に対して、ご本人確認をするための情報につきましては、お客様にて、紛失、忘失又は第三者に知られることのないよう厳重な管理をお願いいたします。</p>
+                
+                <h4>未成年のお客様の情報について</h4>
+                <p>お客様が未成年者の場合は、親権者の方がプライバシーポリシー及び利用規約等の内容に同意され、 お客様がプライバシーポリシー及び利用規約等に基づき本サービスをご利用いただくことについて包括的に同意されることが必要となります。</p>
+                
+                <h4>プライバシーポリシーの改善及び最新のプライバシーポリシーの確認について</h4>
+                <p>弊社はプライバシーポリシーに関して、適宜その改善に取り組みます。<br />お客様は、本サービスにアクセスするか弊社のサービスをご利用になる前に、必ず最新のプライバシーポリシーをご確認ください。<br />お客様が本サービスにアクセスされるか弊社のサービスをご利用になられた場合は、最新のプライバシーポリシーの内容に同意されたものとみなします。</p>
+                
+                <h4>個人情報の開示・訂正・利用停止等の手続について</h4>
+                <p>お客様は、個人情報保護法に従い、個人情報の利用目的の通知、開示、訂正、追加、削除、利用停止等を請求することができます。これらの請求の方法については、本プライバシーポリシー末尾記載の担当宛てまでお問い合わせください。<br />個人情報の開示は、お客様の住所宛に書面を郵送する方法、又はお客様の指定するメールアドレス宛に電磁的記録を送信する方法のうち、お客様の指定する方法（ただし、ご本人の指定する方法での開示に多額の費用を要する場合その他の当該方法による開示が困難である場合にあっては、書面の郵送による方法）により行います。<br />なお、個人情報の利用目的の通知又は開示に際しては、1件あたり1,000円の手数料を申し受けます。</p>
+                
+                <h4>お問い合わせ</h4>
+                <p>プライバシーポリシーに関するお問い合わせ及び個人情報の取り扱いに関する苦情等は、下記担当までお願い致します。</p>
+                <p class="ml20">〒700-0033　岡山県岡山市北区島田本町1-1-47　テクノ技研ビル2階<br />Assist Shine　FIREFITNESS 個人情報担当者宛</p>
+                
+                <p class="mt30" align="right">2024年6月1日制定<br /><br />岡山県岡山市北区島田本町1-1-47　テクノ技研ビル2階<br />FIREFITNESS<br />代表　岡田雄磨</p>
+            </section>
+            
+          
+        </main>
+    </div>
+    
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- コンテンツリンク -->
+                <div class="footer-links">
+                    <h4>コンテンツ</h4>
+                    <ul>
+                        <li><a href="https://www.firefitness-okayama.com#home">ホーム</a></li>
+                        <li><a href="https://www.firefitness-okayama.com#features">特徴</a></li>
+                        <li><a href="https://www.firefitness-okayama.com#flow">体験の流れ</a></li>
+                        <li><a href="https://www.firefitness-okayama.com#pricing">料金プラン</a></li>
+                        <li><a href="https://www.firefitness-okayama.com#trainers">トレーナー</a></li>
+                        <li><a href="https://www.firefitness-okayama.com#locations">店舗情報</a></li>
+                    </ul>
+                </div>
+
+                <!-- サポートリンク -->
+                <div class="footer-links">
+                    <h4>サポート</h4>
+                    <ul>
+                        <li><a href="https://www.firefitness-okayama.com#faq">よくある質問</a></li>
+                        <li><a href="https://www.firefitness-okayama.com#contact">お問い合わせ</a></li>
+                        <li><a href="https://www.firefitness-okayama.com/privacypolicy/">プライバシーポリシー</a></li>
+                        <li><a href="https://www.firefitness-okayama.com/termsofservice/">利用規約</a></li>
+                        <li><a href="https://www.firefitness-okayama.com/specified-commercial-transaction-law/">特定商取引法に基づく表記</a></li>
+                    </ul>
+                </div>
+
+                <!-- お問い合わせ情報 -->
+                <div class="footer-links">
+                    <h4>お問い合わせ</h4>
+                    <ul>
+                        <li>島田本町店: 〒700-0033</li>
+                        <li>岡山県岡山市北区島田本町1-1-47</li>
+                        <li>テクノ技研ビル2F</li>
+                        <li>伊福町店: 〒700-0013</li>
+                        <li>岡山県岡山市北区伊福町3-25-18</li>
+                        <li>TEL: 070-8977-5851</li>
+                        <li>Email: firefitness.okayama@gmail.com</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/firefitness_okayama/?hl=ja/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://lin.ee/dlxGifO"><i class="fab fa-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">© 2025 FIREFITNESS. All Rights Reserved.</div>
+        </div>
+    </footer>
+    
+    <!-- トップへ戻るボタン -->
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    
+    <!-- JavaScript -->
+    <script>
+        // トップへ戻るボタンの表示制御
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // トップへ戻るボタンのクリックイベント
+        document.querySelector('.back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // フォーム入力フィールドのフォーカスエフェクト
+        const formControls = document.querySelectorAll('input, textarea');
+        formControls.forEach(control => {
+            control.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            control.addEventListener('blur', function() {
+                this.parentElement.classList.remove('focused');
+            });
+        });
+    </script>
+</body>
+</html>

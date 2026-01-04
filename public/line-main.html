@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE登録 - 公式アカウントに参加</title>
+    <style>
+        * {
+            margin: 0 !important;
+            padding: 0 !important;
+            box-sizing: border-box !important;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+            background: linear-gradient(135deg, #00B900 0%, #00C300 100%) !important;
+            min-height: 100vh !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 20px !important;
+        }
+
+        .container {
+            background: white !important;
+            border-radius: 20px !important;
+            padding: 40px 30px !important;
+            text-align: center !important;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+            max-width: 400px !important;
+            width: 100% !important;
+            animation: slideUp 0.6s ease-out !important;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0 !important;
+                transform: translateY(50px) !important;
+            }
+            to {
+                opacity: 1 !important;
+                transform: translateY(0) !important;
+            }
+        }
+
+        .line-logo {
+            width: 80px !important;
+            height: 80px !important;
+            background: #00B900 !important;
+            border-radius: 20px !important;
+            margin: 0 auto 30px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 30px !important;
+            color: white !important;
+            font-weight: bold !important;
+        }
+
+        h1 {
+            color: #333 !important;
+            font-size: 24px !important;
+            margin-bottom: 10px !important;
+            font-weight: 600 !important;
+        }
+
+        .subtitle {
+            color: #666 !important;
+            font-size: 16px !important;
+            margin-bottom: 30px !important;
+            line-height: 1.5 !important;
+        }
+
+        .campaign-badge {
+            background: linear-gradient(45deg, #ff6b6b, #feca57) !important;
+            color: white !important;
+            padding: 8px 16px !important;
+            border-radius: 20px !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+            margin-bottom: 20px !important;
+            display: inline-block !important;
+            animation: pulse 2s infinite !important;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1) !important; }
+            50% { transform: scale(1.05) !important; }
+            100% { transform: scale(1) !important; }
+        }
+
+        .open-line-btn {
+            background: #00B900 !important;
+            color: white !important;
+            border: none !important;
+            padding: 18px 40px !important;
+            border-radius: 30px !important;
+            font-size: 18px !important;
+            font-weight: 600 !important;
+            cursor: pointer !important;
+            width: 100% !important;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 8px 20px rgba(0, 185, 0, 0.3) !important;
+        }
+
+        .open-line-btn:hover {
+            background: #009900 !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 12px 25px rgba(0, 185, 0, 0.4) !important;
+        }
+
+        .open-line-btn:active {
+            transform: translateY(0) !important;
+        }
+
+        .open-line-btn:disabled {
+            background: #ccc !important;
+            cursor: not-allowed !important;
+            transform: none !important;
+        }
+
+        .loading-message {
+            color: #666 !important;
+            font-size: 14px !important;
+            margin-top: 15px !important;
+            display: none !important;
+        }
+
+        .debug-info {
+            position: fixed !important;
+            bottom: 10px !important;
+            left: 10px !important;
+            background: rgba(0,0,0,0.8) !important;
+            color: white !important;
+            padding: 10px !important;
+            border-radius: 5px !important;
+            font-size: 11px !important;
+            max-width: 300px !important;
+            display: none !important;
+            text-align: left !important;
+            z-index: 9999 !important;
+            max-height: 200px !important;
+            overflow-y: auto !important;
+        }
+
+        .debug-info.show {
+            display: block !important;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px !important;
+            }
+
+            .container {
+                padding: 30px 20px !important;
+                max-width: 100% !important;
+                border-radius: 15px !important;
+            }
+
+            .line-logo {
+                width: 70px !important;
+                height: 70px !important;
+                font-size: 30px !important;
+                margin-bottom: 25px !important;
+            }
+
+            h1 {
+                font-size: 20px !important;
+                margin-bottom: 8px !important;
+            }
+
+            .subtitle {
+                font-size: 14px !important;
+                margin-bottom: 25px !important;
+            }
+
+            .campaign-badge {
+                font-size: 12px !important;
+                padding: 6px 14px !important;
+                margin-bottom: 15px !important;
+            }
+
+            .open-line-btn {
+                padding: 16px 30px !important;
+                font-size: 16px !important;
+                border-radius: 25px !important;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .container {
+                padding: 25px 15px !important;
+            }
+
+            .line-logo {
+                width: 60px !important;
+                height: 60px !important;
+                font-size: 30px !important;
+                margin-bottom: 20px !important;
+            }
+
+            h1 {
+                font-size: 18px !important;
+            }
+
+            .subtitle {
+                font-size: 13px !important;
+                margin-bottom: 20px !important;
+            }
+
+            .open-line-btn {
+                padding: 14px 25px !important;
+                font-size: 15px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line-logo">
+            LINE
+        </div>
+
+        <div class="campaign-badge" id="campaignBadge" style="display: none;">
+            特別キャンペーン実施中！
+        </div>
+
+        <h1 id="pageTitle">公式アカウントに参加</h1>
+        <p class="subtitle" id="pageSubtitle">
+            最新情報やお得な情報をお届けします。<br>
+            下のボタンからLINEアプリを開いて登録してください。
+        </p>
+
+        <button class="open-line-btn" id="lineBtn" onclick="openLineApp()">
+            LINEで開く
+        </button>
+
+        <div class="loading-message" id="loadingMessage">
+            登録情報を記録中...
+        </div>
+    </div>
+
+    <!-- デバッグ情報表示エリア -->
+    <div class="debug-info" id="debugInfo"></div>
+
+    <script>
+    // ========================================
+    // 設定
+    // ========================================
+
+    // LINEの実際の登録URL
+    const LINE_URL = 'https://lin.ee/S61b75f';
+
+    // Google Apps Script Web App URL
+    const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwF8gRlWmg_judIEMdkxE4gKHsHY33Am8uVTApqMw09dYXlw5sK227S7A0I9LvqhKqh/exec';
+
+    // デバッグモード（本番環境ではfalseに設定）
+    const DEBUG_MODE = false;
+
+    // ========================================
+    // デバッグ表示
+    // ========================================
+    function log(message, isError = false) {
+        const timestamp = new Date().toLocaleTimeString();
+        const logMessage = '[' + timestamp + '] ' + message;
+
+        if (isError) {
+            console.error(logMessage);
+        } else {
+            console.log(logMessage);
+        }
+
+        if (DEBUG_MODE || window.location.search.includes('debug=true')) {
+            const debugDiv = document.getElementById('debugInfo');
+            debugDiv.classList.add('show');
+            debugDiv.innerHTML += logMessage + '<br>';
+        }
+    }
+
+    // ========================================
+    // 初期化処理
+    // ========================================
+    window.addEventListener('load', function() {
+        // 流入元を取得
+        const params = new URLSearchParams(window.location.search);
+        const from = params.get('from');
+
+        log('=== ページロード ===');
+        log('URL: ' + window.location.href);
+        log('流入元: ' + (from || 'direct'));
+        log('GAS URL: ' + GAS_WEB_APP_URL);
+
+        // ページ内容をカスタマイズ
+        customizePageContent(from);
+    });
+
+    // ========================================
+    // LINEアプリを開く（単一送信版・重複防止）
+    // ========================================
+    async function openLineApp() {
+        const button = document.getElementById('lineBtn');
+        const loadingMessage = document.getElementById('loadingMessage');
+
+        // 二重クリック防止
+        if (button.disabled) {
+            log('既に処理中です');
+            return;
+        }
+
+        // ボタンを無効化
+        button.disabled = true;
+        button.textContent = '開いています…';
+        loadingMessage.style.display = 'block';
+
+        // 流入元を取得
+        const params = new URLSearchParams(window.location.search);
+        const from = params.get('from') || 'direct';
+
+        log('=== LINE登録追跡開始 ===');
+        log('流入元: ' + from);
+
+        // タイムスタンプを生成
+        const timestamp = Date.now();
+        const trackingUrl = GAS_WEB_APP_URL + '?from=' + encodeURIComponent(from) + '&timestamp=' + timestamp;
+
+        // Imageオブジェクトで1回だけ送信
+        const img = new Image();
+
+        // 送信開始
+        img.onload = function() {
+            log('記録完了');
+            loadingMessage.textContent = '記録完了！LINEを開きます...';
+        };
+
+        img.onerror = function() {
+            log('記録処理完了（確認不可）');
+            loadingMessage.textContent = '記録処理完了...LINEを開きます...';
+        };
+
+        // 送信実行（1回のみ）
+        log('送信開始: ' + trackingUrl);
+        img.src = trackingUrl;
+
+        // 2秒待ってからLINEアプリを開く
+        setTimeout(function() {
+            log('LINEアプリを開きます');
+            window.location.href = LINE_URL;
+        }, 2000);
+    }
+
+    // ========================================
+    // ページカスタマイズ
+    // ========================================
+    function customizePageContent(from) {
+        const title = document.getElementById('pageTitle');
+        const subtitle = document.getElementById('pageSubtitle');
+        const badge = document.getElementById('campaignBadge');
+
+        // 流入元に応じてメッセージを変更
+        switch(from) {
+            case 'main':
+                log('メインLP用の表示');
+                break;
+
+            case 'postnatal':
+                title.textContent = '産後プラン専用LINE';
+                subtitle.innerHTML = '産後ケアに関する情報をお届けします。<br>LINE登録でサポート開始！';
+                log('産後プラン用の表示');
+                break;
+
+            case 'flyer':
+                badge.style.display = 'inline-block';
+                badge.textContent = 'チラシ限定特典あり！';
+                log('チラシ用の表示');
+                break;
+
+            default:
+                log('デフォルト表示');
+        }
+    }
+
+    // ========================================
+    // デバッグモード自動有効化
+    // ========================================
+    if (new URLSearchParams(window.location.search).get('debug') === 'true') {
+        const debugDiv = document.getElementById('debugInfo');
+        debugDiv.classList.add('show');
+        log('デバッグモード有効');
+    }
+    </script>
+</body>
+</html>

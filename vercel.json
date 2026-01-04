@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/line-main", "destination": "/line-main.html" },
+    { "source": "/line-main/", "destination": "/line-main.html" },
+    { "source": "/shimada-reserve", "destination": "/shimada-reserve.html" },
+    { "source": "/shimada-reserve/", "destination": "/shimada-reserve.html" },
+    { "source": "/privacypolicy", "destination": "/privacypolicy.html" },
+    { "source": "/privacypolicy/", "destination": "/privacypolicy.html" },
+    { "source": "/termsofservice", "destination": "/termsofservice.html" },
+    { "source": "/termsofservice/", "destination": "/termsofservice.html" },
+    { "source": "/specified-commercial-transaction-law", "destination": "/specified-commercial-transaction-law.html" },
+    { "source": "/specified-commercial-transaction-law/", "destination": "/specified-commercial-transaction-law.html" }
+  ]
+}
