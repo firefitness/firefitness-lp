@@ -16,7 +16,7 @@
     const CONFIG = {
         GA4_MEASUREMENT_ID: 'G-QN2VNZB80Z', // GA4の測定ID
         GTM_CONTAINER_ID: 'GTM-XXXXXXX',    // GTMのコンテナID（必要に応じて設定）
-        CLARITY_PROJECT_ID: 's4usoisfht',   // Clarity（設定済み）
+        CLARITY_PROJECT_ID: 'uw1aa9kro8',   // Clarity（設定済み）
         DEBUG: false
     };
 
