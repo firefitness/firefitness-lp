@@ -1,0 +1,232 @@
+<!-- Google Fontsを読み込み -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+
+<!-- 404エラーページ -->
+<section class="section" style="background-color: #f9f9f9; padding: 80px 0; font-family: 'Noto Sans JP', sans-serif;">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; margin-bottom: 40px;">
+      <h2 class="section-title" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 20px; color: var(--primary-color); position: relative;">
+        ページが見つかりません
+      </h2>
+      <div style="content: ''; display: block; width: 80px; height: 4px; background: var(--accent-color); margin: 15px auto 30px;"></div>
+      <p class="section-subtitle" style="text-align: center; font-size: 1.2rem; margin-bottom: 30px; color: #555; max-width: 700px; margin-left: auto; margin-right: auto;">
+        お探しのページは移動または削除された可能性があります。<br>
+        下記の方法で情報をお探しください。
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 900px; margin: 0 auto;">
+      <!-- 検索フォーム -->
+      <div class="plan-card fade-up" style="padding: 30px; border-radius: 10px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); text-align: center; background-color: white; transition: all 0.3s ease; position: relative; overflow: hidden;">
+        <div class="feature-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--accent-color); background-color: rgba(255, 107, 53, 0.1); border-radius: 50%; box-shadow: 0 8px 15px rgba(255, 107, 53, 0.15);">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3 class="feature-title" style="margin-bottom: 15px; font-size: 1.5rem; font-weight: 600; color: var(--primary-color);">キーワード検索</h3>
+        <p style="margin-bottom: 20px; color: #555;">キーワードを入力して記事を検索できます</p>
+        <div class="search-form" style="margin-top: 20px;">
+          <form role="search" method="get" id="searchform" class="searchform cf" action="https://www.firefitness-okayama.com/" >
+		<input type="search" placeholder="ブログ内検索" value="" name="s" id="s" />
+		<button type="submit" id="searchsubmit"></button>
+		</form>        </div>
+      </div>
+
+      <!-- カテゴリーリスト -->
+      <div class="plan-card fade-up" style="padding: 30px; border-radius: 10px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); text-align: center; background-color: white; transition: all 0.3s ease; position: relative; overflow: hidden;">
+        <div class="feature-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--accent-color); background-color: rgba(255, 107, 53, 0.1); border-radius: 50%; box-shadow: 0 8px 15px rgba(255, 107, 53, 0.15);">
+          <i class="fas fa-list"></i>
+        </div>
+        <h3 class="feature-title" style="margin-bottom: 15px; font-size: 1.5rem; font-weight: 600; color: var(--primary-color);">カテゴリーから探す</h3>
+        <p style="margin-bottom: 20px; color: #555;">興味のあるカテゴリーを選択してください</p>
+        <div class="cat-list" style="text-align: left;">
+          <ul style="list-style: none; padding: 0;">
+            	<li class="cat-item cat-item-1"><a href="https://www.firefitness-okayama.com/category/uncategorized/">未分類 <span class="countpost">4</span></a>
+</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px;">
+      <a href="https://www.firefitness-okayama.com" class="btn" style="display: inline-block; padding: 15px 35px; background-color: var(--accent-color); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; letter-spacing: 1px; transition: all 0.3s ease; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); text-align: center; border: none; cursor: pointer; font-size: 1rem; font-family: 'Noto Sans JP', sans-serif;">
+        <i class="fas fa-home" style="margin-right: 8px;"></i> ホームページに戻る
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ページ下部のおすすめセクション -->
+<section class="section features" style="background-color: white; padding: 80px 0;">
+  <div class="container">
+    <h2 class="section-title fade-up" style="font-size: 2rem; font-weight: 700; margin-bottom: 20px; text-align: center; color: var(--primary-color); position: relative;">
+      おすすめコンテンツ
+    </h2>
+    <div style="content: ''; display: block; width: 80px; height: 4px; background: var(--accent-color); margin: 15px auto 30px;"></div>
+    <p class="section-subtitle fade-up" style="text-align: center; font-size: 1.1rem; margin-bottom: 40px; color: #555; max-width: 700px; margin-left: auto; margin-right: auto;">
+      人気のコンテンツをチェックしてみてください
+    </p>
+
+    <div class="features-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+      <!-- おすすめコンテンツ1 -->
+      <div class="feature-card fade-up" style="padding: 30px; border-radius: 10px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); text-align: center; background-color: white; transition: all 0.3s ease; position: relative;">
+        <div class="feature-icon" style="width: 60px; height: 60px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--accent-color); background-color: rgba(255, 107, 53, 0.1); border-radius: 50%; box-shadow: 0 8px 15px rgba(255, 107, 53, 0.15);">
+          <i class="fas fa-dumbbell"></i>
+        </div>
+        <h3 class="feature-title" style="margin-bottom: 15px; font-size: 1.3rem; font-weight: 600; color: var(--primary-color);">パーソナルトレーニング</h3>
+        <p style="color: #555; margin-bottom: 20px;">完全個室のプライベート空間で専属トレーナーによるマンツーマン指導を体験</p>
+        <a href="/features/" class="btn-secondary" style="display: inline-block; padding: 10px 25px; background-color: transparent; border: 2px solid var(--accent-color); color: var(--accent-color); text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; text-align: center;">詳細を見る</a>
+      </div>
+
+      <!-- おすすめコンテンツ2 -->
+      <div class="feature-card fade-up" style="padding: 30px; border-radius: 10px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); text-align: center; background-color: white; transition: all 0.3s ease; position: relative;">
+        <div class="feature-icon" style="width: 60px; height: 60px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--accent-color); background-color: rgba(255, 107, 53, 0.1); border-radius: 50%; box-shadow: 0 8px 15px rgba(255, 107, 53, 0.15);">
+          <i class="fas fa-utensils"></i>
+        </div>
+        <h3 class="feature-title" style="margin-bottom: 15px; font-size: 1.3rem; font-weight: 600; color: var(--primary-color);">食事指導プラン</h3>
+        <p style="color: #555; margin-bottom: 20px;">専門トレーナーによる食事アドバイスで効果的なボディメイクをサポート</p>
+        <a href="/pricing/" class="btn-secondary" style="display: inline-block; padding: 10px 25px; background-color: transparent; border: 2px solid var(--accent-color); color: var(--accent-color); text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; text-align: center;">詳細を見る</a>
+      </div>
+
+      <!-- おすすめコンテンツ3 -->
+      <div class="feature-card fade-up" style="padding: 30px; border-radius: 10px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); text-align: center; background-color: white; transition: all 0.3s ease; position: relative;">
+        <div class="feature-icon" style="width: 60px; height: 60px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--accent-color); background-color: rgba(255, 107, 53, 0.1); border-radius: 50%; box-shadow: 0 8px 15px rgba(255, 107, 53, 0.15);">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3 class="feature-title" style="margin-bottom: 15px; font-size: 1.3rem; font-weight: 600; color: var(--primary-color);">ペアトレーニング</h3>
+        <p style="color: #555; margin-bottom: 20px;">友人やパートナーと一緒に続けられる、お得なペアセッション</p>
+        <a href="/trainers/" class="btn-secondary" style="display: inline-block; padding: 10px 25px; background-color: transparent; border: 2px solid var(--accent-color); color: var(--accent-color); text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; text-align: center;">詳細を見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" style="background: linear-gradient(rgba(13, 43, 69, 0.9), rgba(13, 43, 69, 0.9)), url('https://www.firefitness-okayama.com/wp-content/uploads/2023/10/motivation-bg.jpg') no-repeat center/cover; color: white; text-align: center; padding: 80px 0;">
+  <div class="container">
+    <h2 class="fade-up" style="font-size: 2.2rem; margin-bottom: 20px;">まずは無料体験から始めてみませんか？</h2>
+    <p class="fade-up" style="font-size: 1.1rem; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+      FIREFITNESSの完全個室パーソナルトレーニングで、新しい自分を見つけましょう。
+    </p>
+    <a class="btn fade-up" href="https://firefitness.hacomono.jp/reserve?trial=true&from=home" style="display: inline-block; padding: 15px 35px; background-color: var(--accent-color); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; letter-spacing: 1px; transition: all 0.3s ease; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); text-align: center; border: none; cursor: pointer; font-size: 1rem;">
+      体験セッションを予約する
+    </a>
+  </div>
+</section>
+
+<!-- FontAwesomeの読み込み -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<!-- アニメーション用JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // フェードアップアニメーション
+  const fadeElements = document.querySelectorAll('.fade-up');
+  
+  const checkFade = () => {
+    fadeElements.forEach(element => {
+      element.classList.add('active');
+    });
+  };
+  
+  // 即時実行
+  checkFade();
+  
+  // カテゴリーリストのスタイル調整
+  const categoryList = document.querySelectorAll('.cat-list ul li a');
+  categoryList.forEach(item => {
+    item.style.color = '#555';
+    item.style.textDecoration = 'none';
+    item.style.padding = '5px 0';
+    item.style.display = 'block';
+    item.style.transition = 'all 0.2s ease';
+    
+    item.addEventListener('mouseenter', function() {
+      this.style.color = 'var(--accent-color)';
+      this.style.paddingLeft = '5px';
+    });
+    
+    item.addEventListener('mouseleave', function() {
+      this.style.color = '#555';
+      this.style.paddingLeft = '0';
+    });
+  });
+  
+  // 検索フォームのスタイル調整
+  const searchForm = document.querySelector('.search-form form');
+  if (searchForm) {
+    const searchInput = searchForm.querySelector('input[type="text"]');
+    const searchButton = searchForm.querySelector('input[type="submit"]');
+    
+    if (searchInput) {
+      searchInput.style.width = '100%';
+      searchInput.style.padding = '12px 15px';
+      searchInput.style.borderRadius = '30px';
+      searchInput.style.border = '1px solid #ddd';
+      searchInput.style.marginBottom = '10px';
+      searchInput.style.fontSize = '1rem';
+      searchInput.style.outline = 'none';
+      searchInput.style.transition = 'all 0.3s ease';
+    }
+    
+    if (searchButton) {
+      searchButton.style.background = 'var(--accent-color)';
+      searchButton.style.color = 'white';
+      searchButton.style.border = 'none';
+      searchButton.style.padding = '10px 20px';
+      searchButton.style.borderRadius = '30px';
+      searchButton.style.cursor = 'pointer';
+      searchButton.style.fontWeight = '600';
+      searchButton.style.transition = 'all 0.3s ease';
+    }
+  }
+});
+</script>
+
+<style>
+  :root {
+    --primary-color: #0d2b45;
+    --accent-color: #ff6b35;
+    --dark-color: #1a1a1a;
+  }
+  
+  body, p, h1, h2, h3, h4, h5, h6, a, span, div, input, button {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+  .fade-up.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-card:hover .feature-icon {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+    background-color: #f25a26;
+  }
+  
+  @media (max-width: 768px) {
+    .features-grid, .container > div:first-of-type {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
