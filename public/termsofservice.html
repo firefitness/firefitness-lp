@@ -1,486 +1,319 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8" !important;>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" !important;>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>利用規約 - FIREFITNESS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" !important;>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* 全体のスタイル */
         :root {
-            --primary-color: #0d2b45 !important;
-            --accent-color: #ff6b35 !important;
-            --light-color: #f9f9f9 !important;
-            --dark-color: #333 !important;
-            --gray-color: #e0e0e0 !important;
-            --border-color: #eaeaea !important;
-            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
-            --hover-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
-            --transition: all 0.3s ease !important;
+            --primary-color: #0d2b45;
+            --accent-color: #ff6b35;
+            --light-color: #f9f9f9;
+            --dark-color: #333;
+            --gray-color: #e0e0e0;
+            --border-color: #eaeaea;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --hover-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+            --transition: all 0.3s ease;
         }
-        
+
         * {
-            box-sizing: border-box !important;
-            margin: 0 !important;
-            padding: 0 !important;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        
+
         body {
-            font-family: 'Noto Sans JP', sans-serif !important;
-            color: var(--dark-color) !important;
-            line-height: 1.7 !important;
-            background-color: var(--light-color) !important;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: var(--dark-color);
+            line-height: 1.7;
+            background-color: var(--light-color);
         }
-        
+
         .container {
-            max-width: 1100px !important;
-            margin: 0 auto !important;
-            padding: 0 20px !important;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        
-        /* ヘッダー部分 */
+
         header {
-            background-color: #fff !important;
-            position: sticky !important;
-            top: 0 !important;
-            z-index: 100 !important;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+            background-color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
-        
+
         .header-container {
-            display: flex !important;
-            justify-content: space-between !important;
-            align-items: center !important;
-            padding: 15px 0 !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
         }
-        
+
         .logo {
-            display: flex !important;
-            align-items: center !important;
-            text-decoration: none !important;
-            color: var(--primary-color) !important;
-            font-weight: 700 !important;
-            font-size: 22px !important;
-            transition: var(--transition) !important;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 22px;
+            transition: var(--transition);
         }
-        
+
         .logo:hover {
-            color: var(--accent-color) !important;
+            color: var(--accent-color);
         }
-        
+
         .logo img {
-            height: 35px !important;
-            margin-right: 10px !important;
+            height: 35px;
+            margin-right: 10px;
         }
-        
+
         .breadcrumb {
-            display: flex !important;
-            align-items: center !important;
-            font-size: 14px !important;
-            color: #777 !important;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #777;
         }
-        
+
         .breadcrumb a {
-            color: var(--primary-color) !important;
-            text-decoration: none !important;
-            transition: var(--transition) !important;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
         }
-        
+
         .breadcrumb a:hover {
-            color: var(--accent-color) !important;
+            color: var(--accent-color);
         }
-        
+
         .breadcrumb .separator {
-            margin: 0 8px !important;
-            color: #aaa !important;
+            margin: 0 8px;
+            color: #aaa;
         }
-        
-        /* メインコンテンツ */
+
         main {
-            background-color: #fff !important;
-            padding: 60px 0 !important;
-            box-shadow: var(--box-shadow) !important;
-            margin: 30px 0 !important;
-            border-radius: 12px !important;
+            background-color: #fff;
+            padding: 60px 0;
+            box-shadow: var(--box-shadow);
+            margin: 30px 0;
+            border-radius: 12px;
         }
-        
+
         .page-title {
-            text-align: center !important;
-            margin-bottom: 50px !important;
-            position: relative !important;
-            color: var(--primary-color) !important;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            color: var(--primary-color);
         }
-        
+
         .page-title h1 {
-            font-size: 32px !important;
-            font-weight: 600 !important;
-            margin-bottom: 15px !important;
-            display: inline-block !important;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: inline-block;
         }
-        
+
         .page-title h1:after {
-            content: '' !important;
-            position: absolute !important;
-            bottom: -10px !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
-            width: 80px !important;
-            height: 3px !important;
-            background-color: var(--accent-color) !important;
-            border-radius: 2px !important;
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
         }
-        
+
         .terms-section {
-            max-width: 800px !important;
-            margin: 0 auto !important;
-            padding: 0 20px !important;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        
+
         .terms-section h3 {
-            font-size: 24px !important;
-            margin-bottom: 20px !important;
-            color: var(--primary-color) !important;
-            font-weight: 600 !important;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-weight: 600;
         }
-        
+
         .terms-section h4 {
-            font-size: 20px !important;
-            margin-top: 40px !important;
-            margin-bottom: 20px !important;
-            padding-bottom: 10px !important;
-            border-bottom: 2px dotted var(--border-color) !important;
-            color: var(--primary-color) !important;
-            font-weight: 600 !important;
-            position: relative !important;
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px dotted var(--border-color);
+            color: var(--primary-color);
+            font-weight: 600;
+            position: relative;
         }
-        
+
         .terms-section p {
-            margin-bottom: 20px !important;
+            margin-bottom: 20px;
         }
-        
+
         .terms-section ol {
-            padding-left: 25px !important;
-            margin-bottom: 25px !important;
+            padding-left: 25px;
+            margin-bottom: 25px;
         }
-        
+
         .terms-section ol li {
-            margin-bottom: 10px !important;
-            position: relative !important;
-            padding-left: 5px !important;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 5px;
         }
-        
+
         .terms-section a {
-            color: var(--accent-color) !important;
-            text-decoration: none !important;
-            transition: var(--transition) !important;
-            border-bottom: 1px solid transparent !important;
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: var(--transition);
+            border-bottom: 1px solid transparent;
         }
-        
+
         .terms-section a:hover {
-            border-bottom-color: var(--accent-color) !important;
+            border-bottom-color: var(--accent-color);
         }
-        
-        /* コンタクトフォーム */
-        .contact-section {
-            margin-top: 70px !important;
-            padding-top: 60px !important;
-            border-top: 1px solid var(--border-color) !important;
-        }
-        
-        .contact-section h2 {
-            font-size: 28px !important;
-            margin-bottom: 5px !important;
-            color: var(--primary-color) !important;
-            font-weight: 600 !important;
-            text-align: center !important;
-            margin-bottom: 15px !important;
-        }
-        
-        .contact-section .subtitle {
-            text-align: center !important;
-            color: #777 !important;
-            margin-bottom: 40px !important;
-            font-size: 16px !important;
-        }
-        
-        .form-container {
-            max-width: 700px !important;
-            margin: 0 auto !important;
-            background-color: #fff !important;
-            border-radius: 10px !important;
-            box-shadow: var(--box-shadow) !important;
-            padding: 40px !important;
-        }
-        
-        .form-row {
-            margin-bottom: 25px !important;
-            display: flex !important;
-            flex-wrap: wrap !important;
-        }
-        
-        .form-label {
-            flex: 0 0 200px !important;
-            font-weight: 600 !important;
-            padding: 12px 0 !important;
-            color: var(--primary-color) !important;
-        }
-        
-        .form-field {
-            flex: 1 !important;
-            min-width: 300px !important;
-        }
-        
-        .form-flex {
-            display: flex !important;
-            gap: 15px !important;
-        }
-        
-        .form-flex input {
-            flex: 1 !important;
-        }
-        
-        .asterisk {
-            background-color: var(--accent-color) !important;
-            color: white !important;
-            font-size: 12px !important;
-            padding: 2px 8px !important;
-            border-radius: 4px !important;
-            margin-left: 8px !important;
-            font-weight: 500 !important;
-        }
-        
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100% !important;
-            padding: 12px 15px !important;
-            border: 1px solid var(--border-color) !important;
-            border-radius: 6px !important;
-            font-family: inherit !important;
-            font-size: 15px !important;
-            transition: var(--transition) !important;
-            background-color: #f9f9f9 !important;
-        }
-        
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        textarea:focus {
-            outline: none !important;
-            border-color: var(--accent-color) !important;
-            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1) !important;
-            background-color: #fff !important;
-        }
-        
-        .radio-group {
-            display: flex !important;
-            gap: 30px !important;
-            padding: 12px 0 !important;
-        }
-        
-        .radio-item {
-            display: flex !important;
-            align-items: center !important;
-            cursor: pointer !important;
-        }
-        
-        .radio-item input[type="radio"] {
-            width: 18px !important;
-            height: 18px !important;
-            margin-right: 8px !important;
-            cursor: pointer !important;
-        }
-        
-        textarea {
-            min-height: 150px !important;
-            resize: vertical !important;
-        }
-        
-        .submit-btn {
-            text-align: center !important;
-            margin-top: 40px !important;
-        }
-        
-        .submit-btn input {
-            background-color: var(--accent-color) !important;
-            color: white !important;
-            border: none !important;
-            padding: 14px 45px !important;
-            font-size: 16px !important;
-            font-weight: 600 !important;
-            cursor: pointer !important;
-            transition: var(--transition) !important;
-            border-radius: 50px !important;
-            box-shadow: 0 4px 10px rgba(255, 107, 53, 0.2) !important;
-        }
-        
-        .submit-btn input:hover {
-            background-color: #e85d2a !important;
-            transform: translateY(-2px) !important;
-            box-shadow: 0 6px 15px rgba(255, 107, 53, 0.3) !important;
-        }
-        
-        /* フッター */
+
         footer {
-            background-color: var(--primary-color) !important;
-            color: white !important;
-            padding: 80px 0 30px !important;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0 30px;
         }
-        
+
         .footer-grid {
-            display: grid !important;
-            grid-template-columns: repeat(3, 1fr) !important;
-            gap: 40px !important;
-            margin-bottom: 50px !important;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 50px;
         }
-        
+
         .footer-links h4 {
-            font-size: 18px !important;
-            margin-bottom: 20px !important;
-            position: relative !important;
-            padding-bottom: 10px !important;
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
         }
-        
+
         .footer-links h4:after {
-            content: "" !important;
-            position: absolute !important;
-            bottom: 0 !important;
-            left: 0 !important;
-            width: 40px !important;
-            height: 3px !important;
-            background-color: var(--accent-color) !important;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-color);
         }
-        
+
         .footer-links ul {
-            list-style: none !important;
+            list-style: none;
         }
-        
+
         .footer-links ul li {
-            margin-bottom: 10px !important;
+            margin-bottom: 10px;
         }
-        
+
         .footer-links ul li a {
-            color: #ddd !important;
-            text-decoration: none !important;
-            transition: var(--transition) !important;
-            border-bottom: none !important;
-            font-size: 14px !important;
+            color: #ddd;
+            text-decoration: none;
+            transition: var(--transition);
+            border-bottom: none;
+            font-size: 14px;
         }
-        
+
         .footer-links ul li a:hover {
-            color: var(--accent-color) !important;
+            color: var(--accent-color);
         }
-        
+
         .social-links {
-            display: flex !important;
-            gap: 15px !important;
-            margin-top: 20px !important;
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
         }
-        
+
         .social-links a {
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            width: 40px !important;
-            height: 40px !important;
-            background-color: rgba(255, 255, 255, 0.1) !important;
-            color: white !important;
-            border-radius: 50% !important;
-            transition: var(--transition) !important;
-            border-bottom: none !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            transition: var(--transition);
+            border-bottom: none;
         }
-        
+
         .social-links a:hover {
-            background-color: var(--accent-color) !important;
-            transform: translateY(-3px) !important;
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
         }
-        
+
         .copyright {
-            text-align: center !important;
-            padding-top: 30px !important;
-            border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
-            font-size: 14px !important;
-            color: #aaa !important;
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            color: #aaa;
         }
-        
-        /* 戻るボタン */
+
         .back-to-top {
-            position: fixed !important;
-            bottom: 30px !important;
-            right: 30px !important;
-            width: 50px !important;
-            height: 50px !important;
-            background-color: var(--accent-color) !important;
-            color: white !important;
-            border-radius: 50% !important;
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-            cursor: pointer !important;
-            opacity: 0 !important;
-            visibility: hidden !important;
-            transition: var(--transition) !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
-            z-index: 99 !important;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            z-index: 99;
         }
-        
+
         .back-to-top.visible {
-            opacity: 1 !important;
-            visibility: visible !important;
+            opacity: 1;
+            visibility: visible;
         }
-        
+
         .back-to-top:hover {
-            background-color: #e85d2a !important;
-            transform: translateY(-3px) !important;
+            background-color: #e85d2a;
+            transform: translateY(-3px);
         }
-        
-        /* レスポンシブ対応 */
+
         @media (max-width: 900px) {
             .footer-grid {
-                grid-template-columns: repeat(2, 1fr) !important;
-            }
-            
-            .form-container {
-                padding: 30px 20px !important;
+                grid-template-columns: repeat(2, 1fr);
             }
         }
-        
+
         @media (max-width: 768px) {
             .page-title h1 {
-                font-size: 28px !important;
+                font-size: 28px;
             }
-            
-            .form-label {
-                flex: 0 0 100% !important;
-                padding-bottom: 5px !important;
-            }
-            
-            .form-field {
-                flex: 0 0 100% !important;
-            }
-            
+
             .footer-grid {
-                grid-template-columns: 1fr !important;
-                gap: 30px !important;
+                grid-template-columns: 1fr;
+                gap: 30px;
             }
         }
-        
+
         @media (max-width: 480px) {
             .header-container {
-                flex-direction: column !important;
-                align-items: flex-start !important;
+                flex-direction: column;
+                align-items: flex-start;
             }
-            
+
             .breadcrumb {
-                margin-top: 10px !important;
-            }
-            
-            .form-flex {
-                flex-direction: column !important;
-                gap: 10px !important;
-            }
-            
-            .submit-btn input {
-                width: 100% !important;
+                margin-top: 10px;
             }
         }
     </style>
@@ -492,12 +325,9 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-W495S7Q4');</script>
-    <!-- End Google Tag Manager -->
 
-    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W495S7Q4"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ1J7S3WLT"></script>
@@ -507,7 +337,7 @@
       gtag('js', new Date());
       gtag('config', 'G-PZ1J7S3WLT');
     </script>
-    
+
     <header>
         <div class="container">
             <div class="header-container">
@@ -523,155 +353,168 @@
             </div>
         </div>
     </header>
-    
+
     <div class="container">
         <main>
             <div class="page-title">
                 <h1>利用規約</h1>
             </div>
-            
+
             <section id="terms" class="terms-section">
-                <p>この利用規約（以下、「本規約」といいます。）は、FIREFITNESS（以下、「当社」といいます。）が運営する、「パーソナルトレーニング＆ウォーキングレッスン」各種サービス（以下「本サービス」といいます。）の利用に関し、当社と本サービスをご利用されるお客様（以下、「会員」といいます。）との間に適用されます。</p>
-                
-                <h4>第1条<br>（定義）</h4>
-                <p>本規約において以下の用語は以下の意味で使用するものとします。</p>
+                <h3>FIREFITNESS利用規約</h3>
+                <p>この利用規約（以下「本規約」といいます。）は、Assist Shine（以下「当社」といいます。）が提供するパーソナルトレーニングサービス「FIREFITNESS」（以下「本サービス」といいます。）の利用条件を定めるものです。本サービスをご利用いただくお客様（以下「利用者」といいます。）には、本規約に同意いただいた上で、本サービスをご利用いただきます。</p>
+
+                <h4>第1条（適用）</h4>
                 <ol>
-                    <li>「本サービス」<br>当社が会員に対し、提供する「FIREFITNESS」のパーソナルトレーニング及びそれに関連するサービスをいいます。<br>本サービスには以下のサービスが含まれます。<br>・トレーニングに係るセッション・食事サポート<br>・ストレッチ・コンディショニング ・ウォーキングレッスン<br>・その他、前各号に関連したサービス</li>
-                    <li>「本契約」<br>当社と会員との間で、本規約に基づく契約をいいます。</li>
-                    <li>「施設等」<br>本サービスで使用するトレーニング施設（設備、器具、更衣室、その他付随する当社の施設等を含む）をいいます。</li>
+                    <li>本規約は、利用者と当社との間の本サービスの利用に関わる一切の関係に適用されるものとします。</li>
+                    <li>当社は本サービスに関し、本規約のほか、ご利用にあたってのルール等、各種の定め（以下「個別規定」といいます。）をすることがあります。これら個別規定はその名称のいかんに関わらず、本規約の一部を構成するものとします。</li>
+                    <li>本規約の規定が前条の個別規定の規定と矛盾する場合には、個別規定において特段の定めなき限り、個別規定の規定が優先されるものとします。</li>
                 </ol>
-                
-                <h4>第2条<br>（会員の定義）</h4>
+
+                <h4>第2条（利用登録）</h4>
                 <ol>
-                    <li>本サービスは、本規約に同意の上、利用を申込み、当社が承諾することで、会員として利用できるものとします。なお、１８歳未満の年少者（高校生等）の方につきましては親権者の同意が必要となります。</li>
-                    <li>会員は、申込み情報の項目に関して虚偽の申告をしないものとします。</li>
-                    <li>会員は、申込み情報に変更が生じた場合、速やかに当社に届け出るものとし、所定の変更手続きを行うものとします。</li>
-                    <li>会員が前項の変更手続きを怠り、当社からの連絡・通知等が届かない場合であっても、これにより会員の被った損害等に関して、当社は一切の責任を負わないものとします。</li>
-                    <li>以下の事由に該当する方は本サービスの利用をお断りさせて頂きます。<br>(1). 過去に本規約に違反し、利用をお断りされた方<br>(2). 本サービスの提供を受けることにより健康状態が悪化する恐れのある方<br>(3). 前各号の他、本サービスの秩序を乱す恐れがあると認められる合理的理由のある場合</li>
+                    <li>本サービスにおいては、登録希望者が本規約に同意の上、当社の定める方法によって利用登録を申請し、当社がこれを承認することによって、利用登録が完了するものとします。</li>
+                    <li>当社は、利用登録の申請者に以下の事由があると判断した場合、利用登録の申請を承認しないことがあり、その理由については一切の開示義務を負わないものとします。
+                        <ol>
+                            <li>利用登録の申請に際して虚偽の事項を届け出た場合</li>
+                            <li>本規約に違反したことがある者からの申請である場合</li>
+                            <li>その他、当社が利用登録を相当でないと判断した場合</li>
+                        </ol>
+                    </li>
                 </ol>
-                
-                <h4>第3条<br>(各プラン料金・その他料金・回数券有効期間など)</h4>
+
+                <h4>第3条（利用料金及び支払方法）</h4>
                 <ol>
-                    <li>各プラン料金は、ホームページ記載の金額によるものとします。</li>
-                    <li>各プラン料金は、１回以上サービスを行った場合は理由の如何を問わず返金されないものとします。</li>
-                    <li>各コース料金は、当会の定める所定の方法で納めていきます。</li>
-                    <li>一度納められた各コース料金は、原則返金致しません。但し、病院からの医者の指示でやむなくトレーニングができない場合は、診断書を提示していただくことにより返金する場合もあります。</li>
+                    <li>利用者は、本サービスの有料部分の対価として、当社が別途定め、本ウェブサイトに表示する利用料金を、当社が指定する方法により支払うものとします。</li>
+                    <li>利用者が利用料金の支払を遅滞した場合には、利用者は年14.6％の割合による遅延損害金を支払うものとします。</li>
                 </ol>
-                
-                <h4>第4条<br>（キャンセル）</h4>
+
+                <h4>第4条（禁止事項）</h4>
+                <p>利用者は、本サービスの利用にあたり、以下の行為をしてはなりません。</p>
                 <ol>
-                    <li>前日（営業時間内）までにご連絡（対面・ライン@・電話）を頂き、且つ別にお申し出の日程に空きがある場合、やむを得ない事情（天災など）ができた場合は適宜振替えさせて頂きます。</li>
-                    <li>トライアルセッションを3回キャンセルされますと、理由を問わずその後のご予約を承ることができなくなります。</li>
-                    <li>24時間以内のご予約を3回キャンセルされますと、以降のキャンセルは回数券消費、もしくはその後のご予約を承ることができなくなります。</li>
-                    <li>当日のご連絡なくお越しにならなかった場合、当日のキャンセル扱いとし1回分扱いとします。</li>
+                    <li>法令又は公序良俗に違反する行為</li>
+                    <li>犯罪行為に関連する行為</li>
+                    <li>当社、本サービスの他の利用者、又は第三者のサーバー又はネットワークの機能を破壊したり、妨害したりする行為</li>
+                    <li>当社のサービスの運営を妨害するおそれのある行為</li>
+                    <li>他の利用者に関する個人情報等を収集又は蓄積する行為</li>
+                    <li>不正アクセスをし、又はこれを試みる行為</li>
+                    <li>他の利用者に成りすます行為</li>
+                    <li>当社のサービスに関連して、反社会的勢力に対して直接又は間接に利益を供与する行為</li>
+                    <li>当社、本サービスの他の利用者又は第三者の知的財産権、肖像権、プライバシー、名誉その他の権利又は利益を侵害する行為</li>
+                    <li>以下の表現を含み、又は含むと当社が判断する内容を本サービス上に投稿し、又は送信する行為
+                        <ol>
+                            <li>過度に暴力的な表現</li>
+                            <li>露骨な性的表現</li>
+                            <li>人種、国籍、信条、性別、社会的身分、門地等による差別につながる表現</li>
+                            <li>自殺、自傷行為、薬物乱用を誘引又は助長する表現</li>
+                            <li>その他反社会的な内容を含み他人に不快感を与える表現</li>
+                        </ol>
+                    </li>
+                    <li>以下を目的とし、又は目的とすると当社が判断する行為
+                        <ol>
+                            <li>営業、宣伝、広告、勧誘、その他営利を目的とする行為（当社の認めたものを除きます。）</li>
+                            <li>性行為やわいせつな行為を目的とする行為</li>
+                            <li>面識のない異性との出会いや交際を目的とする行為</li>
+                            <li>他の利用者に対する嫌がらせや誹謗中傷を目的とする行為</li>
+                            <li>当社、本サービスの他の利用者、又は第三者に不利益、損害又は不快感を与えることを目的とする行為</li>
+                            <li>その他本サービスが予定している利用目的と異なる目的で本サービスを利用する行為</li>
+                        </ol>
+                    </li>
+                    <li>宗教活動又は宗教団体への勧誘行為</li>
+                    <li>その他、当社が不適切と判断する行為</li>
                 </ol>
-                
-                <h4>第5条<br>（遅刻）</h4>
-                <p>遅刻をなさった場合、トレーニングをする予定の残り時間のみのトレーニングとなります。<br>遅刻によっては次のご予約状況により、トレーニングが受けられない場合もありますためご了承ください。その場合も１回分として扱いさせて頂きます。</p>
-                
-                <h4>第6条<br>（権利の帰属）</h4>
-                <p>本サービスに関する知的財産、著作権等を含む一切の権利（著作権法第27条及び第28条の権利を含む）は、当社又は著作権を有する第三者に帰属します。</p>
-                
-                <h4>第7条<br>（施設等利用時の禁止事項）</h4>
-                <p>当社は、施設等の利用において、会員による以下の行為を禁止します。</p>
+
+                <h4>第5条（本サービスの提供の停止等）</h4>
                 <ol>
-                    <li>酒気を帯びての利用</li>
-                    <li>賭博行為、勧誘、セールス行為、無許可のアンケート協力、及びそれに類する行為等で、他の会員に迷惑を及ぼす行為</li>
-                    <li>他人及び提携施設に関する誹謗、中傷する行為</li>
-                    <li>他人に対する暴力行為や威嚇行為</li>
-                    <li>利用時に暴力的な発言や大声を発する行為</li>
-                    <li>痴漢、覗き、露出等の違法行為や迷惑行為</li>
-                    <li>所定の場所以外で飲食、喫煙をする行為</li>
-                    <li>危険物や動物の持ち込み</li>
-                    <li>施設等に落書きや造作をする行為</li>
-                    <li>故意に器具を床に落とすなどして、音を立てるまたは振動を与える行為</li>
-                    <li>本サービスの利用に関係のない場所への立ち入り</li>
-                    <li>トレーナー及び当社スタッフの指示に反する行為</li>
-                    <li>無許可での各種設備設定の変更（空調・照明・音響等を含むがこれに限らない）</li>
-                    <li>当社及び提携施設のスタッフ及び関係者に対する退職の勧誘、他社への就職あっせん、引抜きその他これらに類する行為</li>
-                    <li>営業妨害とみなされる行為</li>
-                    <li>その他、本サービスの目的にそぐわない行為</li>
+                    <li>当社は、以下のいずれかの事由があると判断した場合、利用者に事前に通知することなく本サービスの全部又は一部の提供を停止又は中断することができるものとします。
+                        <ol>
+                            <li>本サービスにかかるコンピュータシステムの保守点検又は更新を行う場合</li>
+                            <li>地震、落雷、火災、停電又は天災などの不可抗力により、本サービスの提供が困難となった場合</li>
+                            <li>コンピュータ又は通信回線等が事故により停止した場合</li>
+                            <li>その他、当社が本サービスの提供が困難と判断した場合</li>
+                        </ol>
+                    </li>
+                    <li>当社は、本サービスの提供の停止又は中断により、利用者又は第三者が被ったいかなる不利益又は損害についても、一切の責任を負わないものとします。</li>
                 </ol>
-                
-                <h4>第8条<br>（入場禁止・退場等）</h4>
-                <p>当社は、会員が以下の一つに該当する場合、本サービスの利用をお断りし、又は施設等への入場を該当事由が解消されるまで禁止することができるものとします。</p>
+
+                <h4>第6条（著作権）</h4>
                 <ol>
-                    <li>前条各号に該当する方</li>
-                    <li>医師から運動を禁じられている方（但し、当社が特別に認めた場合はこの限りではありません）</li>
-                    <li>健康状態を害しており、運動することが好ましくないと判断される方</li>
-                    <li>外傷、皮膚疾患、伝染病等を有する方</li>
-                    <li>暴力団員、または暴力団若しくは暴力団員と密接な関係にある方</li>
-                    <li>暴力団準構成員、暴力団関係企業、総会屋等の市民社会の秩序や安全を脅かす方、又はそのような団体と密接な関係にある方</li>
-                    <li>社会通念上、前二号に該当すると思われる行為、言動、外見・身なりをされている方</li>
-                    <li>他の利用者に迷惑をかけると判断される場合</li>
-                    <li>前各号の他、本規約に違反し当社の指示に従わない方</li>
+                    <li>利用者は、自ら著作権等の必要な知的財産権を有するか、又は必要な権利者の許諾を得た文章、画像や映像等の情報に関してのみ、本サービスを利用し、投稿ないしアップロードすることができるものとします。</li>
+                    <li>利用者が本サービスを利用して投稿ないしアップロードした文章、画像、映像等の著作権については、当該利用者その他既存の権利者に留保されるものとします。ただし、当社は、本サービスを利用して投稿ないしアップロードされた文章、画像、映像等について、本サービスの改良、品質の向上、又は不備の是正等並びに本サービスの周知宣伝等に必要な範囲で利用できるものとし、利用者は、この利用に関して、著作者人格権を行使しないものとします。</li>
+                    <li>前項本文の定めるものを除き、本サービス及び本サービスに関連する一切の情報についての著作権及びその他の知的財産権はすべて当社又は当社にその利用を許諾した権利者に帰属し、利用者は無断で複製、譲渡、貸与、翻訳、改変、転載、公衆送信（送信可能化を含みます。）、伝送、配布、出版、営業使用等をしてはならないものとします。</li>
                 </ol>
-                
-                <h4>第9条<br>（健康管理）</h4>
+
+                <h4>第7条（退会）</h4>
                 <ol>
-                    <li>当社は、会員の健康状態又は運動の範囲や程度を判断することはできません。健康状態及び運動の出来る範囲や程度に関しては、会員の自己の責任と判断で行っていただくものとします。</li>
-                    <li>当社は、伝染病・感染症等の拡大が懸念される場合、会員に対して検温・消毒液での手洗い等の措置を実施できるものとし、本サービス提供の停止、または日程を変更する場合があります。<br>会員は予めこれに同意するものとします。</li>
+                    <li>利用者は、当社の定める退会手続により、本サービスから退会できるものとします。</li>
                 </ol>
-                
-                <h4>第10条<br>（免責・損害賠償）</h4>
-                <p>当社の帰責事由によることなく発生した以下の会員の損害等に関し、債務不履行、不法行為等一切の責を免れるものとし、会員は、自己の費用と責任においてこれを解決するものとし、当社に損害を与えないものとします。</p>
-                <p>(1) 本契約第9条（健康管理）、第11条（本契約の解除）、第12条（本サービス提供の停止及び終了）、第17条（本規約の変更）に起因する会員又は第三者の損害<br>(2) 本サービス利用中に起きた会員の怪我、筋肉痛、障害、病気、持病等の発生、その他一切の健康状態の変化<br>(3) トレーナーの行う正当な指導行為に基づき発生する会員の精神的・肉体的疲労や苦痛<br>(4) 本サービス利用中に起きた盗難又は紛失等<br>(5) 会員間の紛争、会員と第三者の紛争</p>
-                <p>当会の施設に際して、本人が生じた人的（筋肉痛・ケガ）、物的事故について当会は一切の責を負いません。<br>会員が当会の施設に際して、当会または第三者の損害を与えた場合、会員が速やかにその賠償の責に応じるものとします。但し、事故又は損害を与えた原因が明らかにトレーナーの過失、および器具類の不具合による場合はこの限りではありません。</p>
-                
-                <h4>第11条<br>（本契約の解除）</h4>
-                <p>当社は、会員が支払うべき本サービスの利用料をお支払い頂けない場合、その他本規約に違反した場合は、何ら催告なしに会員に対する本サービスの提供を停止または解除することができるものとします。</p>
-                
-                <h4>第12条<br>（本サービス提供の停止及び終了）</h4>
+
+                <h4>第8条（利用制限及び登録抹消）</h4>
                 <ol>
-                    <li>当社は、会員が第7条（施設等利用時の禁止事項）の各号及び第8条（入場禁止・退場等）の各号、第9条（健康管理）第2項に記載する事由のいずれかに該当する行為をした場合、又は、これらの事由に該当する恐れがあると認められた場合、当該会員に対し、事前に何ら通知することなく、本サービスの提供を停止することができるものとします。</li>
-                    <li>当社は、会員に対し、一定の予告期間を設けて通知した上で、本サービスを終了することができるものとします。この場合、本サービス終了時に、本契約も終了するものとします。</li>
+                    <li>当社は、利用者が以下のいずれかに該当する場合には、事前の通知なく、利用者に対して、本サービスの全部もしくは一部の利用を制限し、又は利用者としての登録を抹消することができるものとします。
+                        <ol>
+                            <li>本規約のいずれかの条項に違反した場合</li>
+                            <li>登録事項に虚偽の事実があることが判明した場合</li>
+                            <li>料金等の支払債務の不履行があった場合</li>
+                            <li>当社からの連絡に対し、一定期間返答がない場合</li>
+                            <li>本サービスについて、最終の利用から一定期間利用がない場合</li>
+                            <li>その他、当社が本サービスの利用を適当でないと判断した場合</li>
+                        </ol>
+                    </li>
+                    <li>当社は、本条に基づき当社が行った行為により利用者に生じた損害について、一切の責任を負いません。</li>
                 </ol>
-                
-                <h4>第13条<br>（個人情報の取扱）</h4>
+
+                <h4>第9条（保証の否認及び免責事項）</h4>
                 <ol>
-                    <li>当社は、会員の個人情報の管理に関し、個人情報保護法を遵守するものとします。</li>
-                    <li>会員は、当社が以下の目的で、会員の個人情報を収集、利用することに同意します。<br>・当社が会員に対し、新サービスの紹介、本サービスの内容の変更のためのメール配信に利用する目的<br>・当社が得られた情報をもとに統計資料を作成する目的<br>・当社が会員に対し、当社の提携先の商品・サービス等の情報を配信する目的<br>・会員からの問合わせに利用する目的</li>
-                    <li>会員は、当社が第三者に対し、個人情報の全部又は一部の管理を委託することに同意するものとします。</li>
-                    <li>当社は、会員ご自身の同意なしに前項の第三者以外に開示・提供することはありません。<br>ただし、個人情報保護法第23条1項各号に該当する場合、裁判所、警察等の公的機関から開示を求められた場合、会員ご自身の同意なく個人情報を開示・提供することがあります。</li>
-                    <li>当社は、個人情報保護法が改正された場合、変更後の法律を遵守するものとします。</li>
+                    <li>当社は、本サービスに事実上又は法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。</li>
+                    <li>当社は、本サービスに起因して利用者に生じたあらゆる損害について、当社の故意又は重過失による場合を除き、一切の責任を負いません。ただし、本サービスに関する当社と利用者との間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、この免責規定は適用されません。</li>
+                    <li>前項ただし書に定める場合であっても、当社は、当社の過失（重過失を除きます。）による債務不履行又は不法行為により利用者に生じた損害のうち特別な事情から生じた損害（当社又は利用者が損害発生につき予見し、又は予見し得た場合を含みます。）について一切の責任を負いません。また、当社の過失（重過失を除きます。）による債務不履行又は不法行為により利用者に生じた損害の賠償は、利用者から当該損害が発生した月に受領した利用料の額を上限とします。</li>
+                    <li>当社は、本サービスに関して、利用者と他の利用者又は第三者との間において生じた取引、連絡又は紛争等について一切責任を負いません。</li>
                 </ol>
-                
-                <h4>第14条<br>（権利義務の譲渡禁止）</h4>
-                <p>会員は、本契約に係るいかなる権利又は義務も第三者に移転又は譲渡することはできません。</p>
-                
-                <h4>第15条<br>（施設・設備と利用制限）</h4>
-                <p>天変地異・法令の制定改廃・社会情勢と著しい変化・その他やむを得ない事由が発生した場合、<br>当会は施設・設備・サービスの全部若しくは一部を廃止し、またはその理由を制限することができます。<br>施設・設備の改造・改変・整備などを行う場合、又経営上必要あると認められた場合、当会は施設・全部若しくは一部を廃止し、その利用やサービスの提供を制限することができます。<br>その告知は、施設内提示等により行います。施設の管理上やむを得ない場合には、予め告知の上、休業することがあります。その告知は原則として、施設の掲示板等により行いますが、やむを得ない臨時休業についてはこの限りではありません。<br>上記の場合、当会は会員へ報告・連絡・相談し双方納得いく状態をつくるものとする。<br>その際納得されてから、会員は当会に対し、損害賠償等一切請求できないものとします。</p>
-                
-                <h4>第16条<br>（忘れ物）</h4>
-                <p>当会での拾得物については、一定期間(一か月)保管したあと、処分させて頂きます。</p>
-                
-                <h4>第17条<br>（本規約等の変更）</h4>
-                <p>当会は本規約に基づいて会員が納入すべき料金などを諸般の事情により変更することができます。<br>前項の場合、当会は原則として一か月以上前までにその内容を会員に書面または公式LINEのメッセージで通知するものとします。</p>
-                
-                <h4>第18条<br>（解約）</h4>
-                <p>会員解約の際は、毎月の入会した日にちより、5営業日前に当ジムの店頭にて直接電話、またはLINEでその旨をお伝えください。それまでに当会へ解約のご連絡がない場合は、翌月もご継続の意思があるものとします。</p>
-                
-                <h4>第19条<br>（反社会的勢力の排除）</h4>
+
+                <h4>第10条（サービス内容の変更等）</h4>
+                <p>当社は、利用者への事前の告知をもって、本サービスの内容を変更、追加又は廃止することがあり、利用者はこれを承諾するものとします。</p>
+
+                <h4>第11条（利用規約の変更）</h4>
                 <ol>
-                    <li>会員（会員の法定代理人を含む）は、暴力団、暴力団関係団体その他の反社会的組織、暴力団員またはこれらと密接な関係を有する者と、何らの関係も有しないことを保証します。</li>
-                    <li>前項に違反する事実が発覚した場合、当社は本契約を無催告で解除することができ、かつこれにより被った全ての損害の賠償を、当該会員に請求することができるものとします。</li>
+                    <li>当社は以下の場合には、利用者の個別の同意を要せず、本規約を変更することができるものとします。
+                        <ol>
+                            <li>本規約の変更が利用者の一般の利益に適合するとき。</li>
+                            <li>本規約の変更が本サービス利用契約の目的に反せず、かつ、変更の必要性、変更後の内容の相当性その他の変更に係る事情に照らして合理的なものであるとき。</li>
+                        </ol>
+                    </li>
+                    <li>当社は利用者に対し、前項による本規約の変更にあたり、事前に、本規約を変更する旨及び変更後の本規約の内容並びにその効力発生時期を通知します。</li>
                 </ol>
-                
-                <h4>第20条<br>（準拠法）</h4>
-                <p>本契約の成立、効力、履行および解釈に関しては日本法が適用されるものとします。</p>
-                
-                <h4>第21条<br>（合意管轄）</h4>
-                <p>当社と会員との間で疑義又は争いが生じた場合には、誠意を持って協議することとしますが、それでもなお解決しない場合には訴額に応じ岡山地方裁判所を専属の管轄裁判所とします｡</p>
+
+                <h4>第12条（個人情報の取扱い）</h4>
+                <p>当社は、本サービスの利用によって取得する個人情報については、当社「<a href="/privacypolicy.html">プライバシーポリシー</a>」に従い適切に取り扱うものとします。</p>
+
+                <h4>第13条（通知又は連絡）</h4>
+                <p>利用者と当社との間の通知又は連絡は、当社の定める方法によって行うものとします。当社は、利用者から、当社が別途定める方式に従った変更届け出がない限り、現在登録されている連絡先が有効なものとみなして当該連絡先へ通知又は連絡を行い、これらは、発信時に利用者へ到達したものとみなします。</p>
+
+                <h4>第14条（権利義務の譲渡の禁止）</h4>
+                <p>利用者は、当社の書面による事前の承諾なく、利用契約上の地位又は本規約に基づく権利もしくは義務を第三者に譲渡し、又は担保に供することはできません。</p>
+
+                <h4>第15条（準拠法・裁判管轄）</h4>
+                <ol>
+                    <li>本規約の解釈にあたっては、日本法を準拠法とします。</li>
+                    <li>本サービスに関して紛争が生じた場合には、当社の本店所在地を管轄する裁判所を専属的合意管轄とします。</li>
+                </ol>
+
+                <p style="margin-top: 40px; text-align: right;">
+                    2024年6月1日制定<br /><br />
+                    岡山県岡山市北区島田本町1-1-47　テクノ拠点ビル2階<br />
+                    Assist Shine<br />
+                    代表　岡　雄磨
+                </p>
             </section>
-            
         </main>
     </div>
-    
+
     <!-- フッター -->
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <!-- コンテンツリンク -->
                 <div class="footer-links">
                     <h4>コンテンツ</h4>
                     <ul>
@@ -684,31 +527,29 @@
                     </ul>
                 </div>
 
-                <!-- サポートリンク -->
                 <div class="footer-links">
                     <h4>サポート</h4>
                     <ul>
                         <li><a href="https://www.firefitness-okayama.com#faq">よくある質問</a></li>
                         <li><a href="https://www.firefitness-okayama.com#contact">お問い合わせ</a></li>
-                        <li><a href="https://www.firefitness-okayama.com/privacypolicy/">プライバシーポリシー</a></li>
-                        <li><a href="https://www.firefitness-okayama.com/termsofservice/">利用規約</a></li>
-                        <li><a href="https://www.firefitness-okayama.com/specified-commercial-transaction-law/">特定商取引法に基づく表記</a></li>
+                        <li><a href="/privacypolicy.html">プライバシーポリシー</a></li>
+                        <li><a href="/termsofservice.html">利用規約</a></li>
+                        <li><a href="/specified-commercial-transaction-law.html">特定商取引法に基づく表記</a></li>
                     </ul>
                 </div>
 
-                <!-- お問い合わせ情報 -->
                 <div class="footer-links">
                     <h4>お問い合わせ</h4>
                     <ul>
                         <li>島田本町店: 〒700-0033</li>
                         <li>岡山県岡山市北区島田本町1-1-47</li>
-                        <li>テクノ技研ビル2F</li>
+                        <li>テクノ拠点ビル2F</li>
                         <li>伊福町店: 〒700-0013</li>
                         <li>岡山県岡山市北区伊福町3-25-18</li>
                         <li>TEL: 070-8977-5851</li>
                         <li>Email: firefitness.okayama@gmail.com</li>
                     </ul>
-                    
+
                     <div class="social-links">
                         <a href="https://www.instagram.com/firefitness_okayama/?hl=ja/"><i class="fab fa-instagram"></i></a>
                         <a href="https://lin.ee/dlxGifO"><i class="fab fa-line"></i></a>
@@ -718,15 +559,12 @@
             <div class="copyright">© 2025 FIREFITNESS. All Rights Reserved.</div>
         </div>
     </footer>
-    
-    <!-- トップへ戻るボタン -->
+
     <div class="back-to-top">
         <i class="fas fa-chevron-up"></i>
     </div>
-    
-    <!-- JavaScript -->
+
     <script>
-        // トップへ戻るボタンの表示制御
         window.addEventListener('scroll', function() {
             const backToTop = document.querySelector('.back-to-top');
             if (window.scrollY > 300) {
@@ -735,24 +573,11 @@
                 backToTop.classList.remove('visible');
             }
         });
-        
-        // トップへ戻るボタンのクリックイベント
+
         document.querySelector('.back-to-top').addEventListener('click', function() {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
-            });
-        });
-        
-        // フォーム入力フィールドのフォーカスエフェクト
-        const formControls = document.querySelectorAll('input, textarea');
-        formControls.forEach(control => {
-            control.addEventListener('focus', function() {
-                this.parentElement.classList.add('focused');
-            });
-            
-            control.addEventListener('blur', function() {
-                this.parentElement.classList.remove('focused');
             });
         });
     </script>
